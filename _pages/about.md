@@ -5,8 +5,10 @@ permalink: /
 description:
 profile:
   align: right
-  image: profile_back.png
-  address:
+  image: prof_pic.jpg
+  address: >
+    <p>656 Evans Hall</p>
+    <p>Berkeley, CA 94720</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
