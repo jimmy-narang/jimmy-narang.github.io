@@ -5,10 +5,11 @@ permalink: /
 description:
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_back.png
   address: >
     <p>656 Evans Hall</p>
     <p>Berkeley, CA 94720</p>
+    <p> CV <a href="https://www.dropbox.com/s/jzb7tixznlfbuak/Resume-2021.pdf?dl=0">here</a> </p> 
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -23,7 +24,7 @@ They'd banish us, you know.
 How dreary to be somebody!  
 How public, like a frog  
 To tell your name the livelong day  
-To an admiring bog!  
+To an admiring bog!
 
 --- Emily Dickinson
 
