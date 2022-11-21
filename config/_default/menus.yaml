@@ -10,12 +10,15 @@ main:
   - name: Research
     url: '#research'
     weight: 20
-  - name: Research Experience
+  - name: Research Exp
     url: '#research-exp'
     weight: 30
   - name: Teaching
     url: '#teaching'
-    weight: 30
+    weight: 50
+  - name: Work Exp
+    url: '#work-exp'
+    weight: 60
   - name: CV
     url: 'uploads/CV_Jimmy_Narang_2022.pdf'
     weight: 70
