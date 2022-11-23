@@ -27,20 +27,20 @@ experience:
     company_url: 'https://econ.berkeley.edu/'
     company_logo: 
     location: Berkeley, CA
-    date_start: '2008-09-05'
+    date_start: '2017-09-05'
     date_end: '2021-04-27'
     description: |2-
-       I was a TA in the Department of Economics for undergraduate courses on Behavioral Ecoonomics, Econometrics, Microeconomics, Mathematical Econonmics, and Intro to Economics. 
+       Behavioral Economics, Econometrics, Microeconomics, Mathematical Economics, and Intro to Economics. 
 
 
-  - title: Teaching Assistant
-    company: International Institute of Information Technology
-    company_url: 'https://www.iiit.ac.in/'
-    location: Hyderabad, India
-    date_start: '2007-08-05'
-    date_end: '2007-12-20'
-    description: |2-
-      Teaching Assistant for undegraduate course on Algorithms and Data Structures.
+  # - title: Teaching Assistant
+  #   company: International Institute of Information Technology
+  #   company_url: 'https://www.iiit.ac.in/'
+  #   location: Hyderabad, India
+  #   date_start: '2007-08-05'
+  #   date_end: '2007-12-20'
+  #   description: |2-
+  #     Teaching Assistant for undegraduate course on Algorithms and Data Structures.
 
 design:
   columns: '2'
