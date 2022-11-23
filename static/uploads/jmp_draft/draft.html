@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jimmy Narang">
+<meta name="dcterms.date" content="2022-11-19">
+
+<title>Sharing isn’t Believing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="draft_files/libs/clipboard/clipboard.min.js"></script>
+<script src="draft_files/libs/quarto-html/quarto.js"></script>
+<script src="draft_files/libs/quarto-html/popper.min.js"></script>
+<script src="draft_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="draft_files/libs/quarto-html/anchor.min.js"></script>
+<link href="draft_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="draft_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="draft_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="draft_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="draft_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
+  <li><a href="#theoretical-and-empirical-framework" id="toc-theoretical-and-empirical-framework" class="nav-link" data-scroll-target="#theoretical-and-empirical-framework"><span class="toc-section-number">2</span>  Theoretical and Empirical Framework</a>
+  <ul class="collapse">
+  <li><a href="#a-framework-for-sharing-decisions" id="toc-a-framework-for-sharing-decisions" class="nav-link" data-scroll-target="#a-framework-for-sharing-decisions"><span class="toc-section-number">2.1</span>  A Framework for Sharing Decisions</a></li>
+  <li><a href="#receivers-updates" id="toc-receivers-updates" class="nav-link" data-scroll-target="#receivers-updates"><span class="toc-section-number">2.2</span>  Receivers’ Updates</a></li>
+  </ul></li>
+  <li><a href="#sec-design" id="toc-sec-design" class="nav-link" data-scroll-target="#sec-design"><span class="toc-section-number">3</span>  Study Design</a>
+  <ul class="collapse">
+  <li><a href="#participation-recruitment." id="toc-participation-recruitment." class="nav-link" data-scroll-target="#participation-recruitment."><span class="toc-section-number">3.1</span>  Participation &amp; Recruitment.</a></li>
+  <li><a href="#sharers-workflow" id="toc-sharers-workflow" class="nav-link" data-scroll-target="#sharers-workflow"><span class="toc-section-number">3.2</span>  Sharer’s Workflow</a></li>
+  <li><a href="#receivers-workflow" id="toc-receivers-workflow" class="nav-link" data-scroll-target="#receivers-workflow"><span class="toc-section-number">3.3</span>  Receiver’s Workflow</a></li>
+  <li><a href="#story-selection" id="toc-story-selection" class="nav-link" data-scroll-target="#story-selection"><span class="toc-section-number">3.4</span>  Story Selection</a></li>
+  </ul></li>
+  <li><a href="#sharers" id="toc-sharers" class="nav-link" data-scroll-target="#sharers"><span class="toc-section-number">4</span>  Sharers</a>
+  <ul class="collapse">
+  <li><a href="#sharing-as-a-function-of-belief" id="toc-sharing-as-a-function-of-belief" class="nav-link" data-scroll-target="#sharing-as-a-function-of-belief"><span class="toc-section-number">4.1</span>  Sharing as a function of belief</a></li>
+  </ul></li>
+  <li><a href="#receivers" id="toc-receivers" class="nav-link" data-scroll-target="#receivers"><span class="toc-section-number">5</span>  Receivers</a>
+  <ul class="collapse">
+  <li><a href="#updating-on-bot-clues." id="toc-updating-on-bot-clues." class="nav-link" data-scroll-target="#updating-on-bot-clues."><span class="toc-section-number">5.1</span>  Updating on BOT Clues.</a></li>
+  <li><a href="#updating-on-sharers-decision-to-share-a-story" id="toc-updating-on-sharers-decision-to-share-a-story" class="nav-link" data-scroll-target="#updating-on-sharers-decision-to-share-a-story"><span class="toc-section-number">5.2</span>  Updating on sharers’ decision to <em>share</em> a story</a></li>
+  <li><a href="#updating-on-sharers-beliefs-about-a-story" id="toc-updating-on-sharers-beliefs-about-a-story" class="nav-link" data-scroll-target="#updating-on-sharers-beliefs-about-a-story"><span class="toc-section-number">5.3</span>  Updating on sharers’ <em>beliefs</em> about a story</a></li>
+  <li><a href="#sharing-is-a-coarse-signal" id="toc-sharing-is-a-coarse-signal" class="nav-link" data-scroll-target="#sharing-is-a-coarse-signal"><span class="toc-section-number">5.4</span>  Sharing is a coarse signal</a></li>
+  <li><a href="#second-order-beliefs" id="toc-second-order-beliefs" class="nav-link" data-scroll-target="#second-order-beliefs"><span class="toc-section-number">5.5</span>  Second-order Beliefs</a></li>
+  <li><a href="#aggregating-results-for-social-learning" id="toc-aggregating-results-for-social-learning" class="nav-link" data-scroll-target="#aggregating-results-for-social-learning"><span class="toc-section-number">5.6</span>  Aggregating results for social learning</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="toc-section-number">6</span>  Conclusion</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables"><span class="toc-section-number">7</span>  Tables</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures"><span class="toc-section-number">8</span>  Figures</a></li>
+  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography"><span class="toc-section-number">9</span>  Bibliography</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix"><span class="toc-section-number">10</span>  Appendix</a>
+  <ul class="collapse">
+  <li><a href="#figures-1" id="toc-figures-1" class="nav-link" data-scroll-target="#figures-1"><span class="toc-section-number">10.1</span>  Figures</a></li>
+  <li><a href="#a-note-on-the-sharing-threshold" id="toc-a-note-on-the-sharing-threshold" class="nav-link" data-scroll-target="#a-note-on-the-sharing-threshold"><span class="toc-section-number">10.2</span>  A Note on the Sharing Threshold</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sharing isn’t Believing</h1>
+<p class="subtitle lead">Experimental evidence on coarse messaging and belief-formation in fake news. (Please see <a href="https://www.dropbox.com/s/0si60kn7fjj16ky/draft.pdf?dl=0">here</a> for the latest version)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jimmy Narang </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 19, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    People frequently share stories on social media with little additional context. I explore how this type of coarse messaging biases receivers’ beliefs about the veracity of stories forwarded to them. Using a set of lab experiments in India with ~800 pairs of real-life friends, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I compare receivers’ updates on forwarded stories to their updates on learning the sharer’s beliefs, and find that receivers significantly overestimate the extent to which sharing decisions reflect sharer’s beliefs, and the extent to which sharer’s beliefs predict story veracity. Furthermore, receivers exhibit a form of selection neglect - they update identically on stories that sharers find credible, and on those that sharers do not find as credible but share anyway (these stories are more likely to be false). Finally, I find that the largest increases in receivers’ beliefs occur when their priors are low, a form of non-bayesian updating that privileges increased belief in false stories. I conclude by examining implications for aggregate learning and with counterfactual exercises to identify the relative value of targeting each of these mechanisms.
+  </div>
+</div>
+
+</header>
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<!--
+Version 0.1 is a minor upgrade.
+-->
+<p>Social media makes it easy to share news stories with friends and family, but harder to convey uncertainty. On platforms such as WhatsApp or Facebook, people often forward news stories with little additional context, rarely describing why they choose to share a particular story or how much they believe it themselves.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This type of coarse messaging can be consequential, especially if the people receiving these stories form an opinion about their veracity not only from the stories’ contents, but also from their relationship with (and opinion of) the person who sent them.</p>
+<p>This paper explores what the act of sharing a news story on social media signals about its veracity, from the perspective of both the sharer and the receiver. From the sharer’s perspective, we ask: how does the decision to share a story depend on their belief in the story’s veracity? And from the receiver’s perspective, we ask: how much do receivers update their belief in a story because it was shared by a friend? In particular, do receivers make systematic errors in drawing an inference about the story’s veracity when they can only observe the sharer’s decisions, and not the beliefs and motivations underlying those decisions?<br>
+<!-- 
+To fix ideas, let $d(p, \mathbf{x}) \in \{0, 1\}$ denote the sharer's decision to share a story as a function of their belief in its veracity ($p \in [0,1]$) and a set of story characteristics, $\mathbf{x} = \left[x_1,x_2,\ldots,x_n \right]^T$. --></p>
+<!-- In either case, the focus is on news stories and factual claims (so, not memes or jokes), and on sharing between people who _know_ each other, so that receivers may be expected to infer the sharers' beliefs or reasons for sharing, without having to spell them out.  -->
+<p>To answer these questions, we conduct a lab-in-field experiment in India with ~800 pairs of friends across 30 colleges in seven cities. To simulate a social media environment, we conduct this experiment on a custom platform<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> that provides participants with a familiar interface but allows us to randomize design parameters and control what information is passed from sharers to receivers.</p>
+<p>In the first part of the experiment, one individual in each pair of friends is randomly assigned to become the sharer (she/her<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>), and their partner becomes the receiver (he/him). The sharer scrolls through a series of news stories and decides if she wants to share each story with her partner. There is no special incentive to share, and the sharer is requested to match her real-life behavior as best as possible. After making her decisions, she goes through these stories a second time and reports how likely she thinks each story is true, and answers some supplementary questions.</p>
+<p>In the second part of the experiment, the receiver scrolls through the same set of stories and reports how likely he thinks each story is true. He then sees these stories a second time, but now, each story is accompanied by a signal about its veracity. After observing each signal, the receiver reports his posterior belief. <!--The stories are then randomly partitioned into three groups and shown one group at a time; but each story, in each group, is now accompanied by a _signal_  --></p>
+<p>For the first one-third of stories (chosen at random)<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, the receiver sees whether his friend decided to share the story or not. For the next one-third of stories, the receiver sees his friend’s belief in the story’s veracity. For the final third, the receiver sees a computer-generated clue about the story’s veracity that is correct with probability 0.8. Comparing the receiver’s updates on revealed <em>decisions</em> to their updates on revealed <em>beliefs</em> allows us to identify the impact of coarse messaging. Moreover, comparing their updates on revealed decisions to updates on computer-generated clues allows us to infer the signal-value of the sharer’s decisions to the receiver.</p>
+<p>Before discussing our findings, we introduce some terminology: define the ratio of mean belief in true stories to mean belief in false stories as <em>belief discernment</em>, and the odds of sharing a true story to sharing a false story as <em>sharing discernment</em>. Sharers in our study are reasonably able to tell true and false stories apart (mean belief in), but they share those stories at roughly equal rates. That is, their sharing discernment is worse than their belief discernment. This is consistent with patterns previously observed in <span class="citation" data-cites="pennycook2021shifting">Pennycook et al. (<a href="#ref-pennycook2021shifting" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="PennycookTrends">Pennycook and Rand (<a href="#ref-PennycookTrends" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="serra2021mistakes">Serra-Garcia and Gneezy (<a href="#ref-serra2021mistakes" role="doc-biblioref">2021</a>)</span>.</p>
+<p>We now discuss four main sets of results that extend this literature. In our first set of results, we examine how the decision to share a story depends on the sharer’s belief in its veracity.</p>
+<p>We find that the probability of sharing is monotonically increasing in belief, and it is convex, rising slowly at first (usually until a belief of 0.5) and rapidly thereafter. Furthermore, people do not share everything they believe, nor do they believe everything they share: the probability of sharing is greater than 0 (0.25, s.e. 0.01) even when beliefs are under 0.1, and the probability of sharing is less than 1 (0.63, s.e. 0.01) even when beliefs are above 0.9. Thus, although the decision to share a story depends on the sharer’s belief about its veracity, factors other than veracity matter, too.</p>
+<p>What are these factors? Sharers have complex and varied reasons for sharing a story, but for now we treat those reasons as a black box. We think of sharing as a function of the sharer’s belief and some unobserved variable(s) that affect a story’s shareability conditional on belief<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> We draw attention to one variable in that box, however: the story’s veracity. False stories are more likely to be shared across all levels of belief in our data, but the difference is not statistically significant.</p>
+<p>In our second set of results, we find that receivers update their beliefs about a story’s veracity by 4 pp (s.e. 0.44) upon learning that their friend shared the story with them.To provide a sense of that magnitude, we translate this update into its perceived <em>signal value</em> to the receiver. We do this by calibrating two non-bayesian models with receivers’ updates on computer-generated signals. Both models yield similar estimates.</p>
+<p>We estimate that receivers update as if their friends’ sharing decisions have a signal value of <span class="math inline">\hat{s}^R = 0.64</span> (s.e. 0.01), even though the true value of their sharing decisions – which we can measure from sharers’ choices – is <span class="math inline">\hat{s} = 0.51</span> (s.e. 0.01)<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. That is, receivers update as if there is nearly a two-in-three chance that the story is true if it is shared by their friend, whereas in reality, the chance is only slightly better than noise. Thus, receivers appear to significantly over-estimate the signal-value of their friends’ decision to share a story.</p>
+<!--
+Does this bias arise because receivers overestimate their friends' ability to distinguish true stories from false ones (i.e., their belief discernment), or does it arise because receivers conflate  sharing decisions to forward a story are less informative than their beliefs would be? To answer this, we estimate the signal value of the revealing that the sharer's prior was in in a specific quarter (0-0.25, 0.25-0.5, 0.5-0.75, 0.71-1), and comparing it to the true value. We find receivers' estimates are higher that true values in all cases.     
+ 
+Together, these results suggest that (i) receivers trust their friends' discernment more than they should; but at the same time (ii) appreciate the distinction between their friend _sharing_ a news story versus _believing_ it,  and treat their friends' (directly reported) _beliefs_ as much more informative about a story's veracity than their decision to share it. Put differently, they have lower trust in the accuracy of shared stories than they do in the sharer themselves. -->
+<p>In our third set of results, we find that receivers are as likely to over-update on (shared) stories that their friend thought was true as they are to over-update on stories that their friend thought was false (or less likely to be true) but shared anyway. In other words, there is little evidence of heterogeneity in receivers’ updates in shared stories by sharer’s beliefs. We can think of this phenomenon as first, a form of omitted variable bias where the omitted variable is the story’s shareability, or second, a form of selection neglect, where receivers underappreciate that forwarded stories are a subset of what their partner sees, chosen because the stories felt credible or worthy of sharing despite low credibility. Selection neglect is problematic for two reasons: first, stories shared at low levels of belief are more likely to be false (this is empirically true in our sample, both with and without conditioning on sharers’ belief) and second, the <em>change</em> in receivers’ beliefs is highest for stories when their priors are lowest, a form of non-bayesian updating which puts false stories at an advantage<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
+<p>We establish selection neglect in multiple ways. First, we group stories by shareability net of belief, and show that receivers update in similar patterns across these groups of stories. Second, putting shareability aside, we show that receivers update by roughly the same amount in shared stories <em>irrespective</em> of the sharers’ belief in them. Third, we show that <em>revealing</em> the sharer’s belief causes receivers to update in the right direction by a significant amount, suggesting that the lack of differential updating occurs not because receivers find the sharer’s belief uninformative, but because they do not (or cannot) identify sharer’s belief from their choices. Fourth, to confirm this is the case, we ask receivers to guess the sharers’ belief <em>after</em> revealing their sharing decision. We find that receivers’ guesses are as good as noise. (In fact, incentivizing this elicitation only marginally improves the receiver’s performance, which is more consistent with the inability to guess the sharer’s beliefs than it is with inattention.)<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
+<p>In our final sets of results, we examine the impact of our findings on aggregate social learning. The fact that (1) sharers are more likely to share false stories across all levels of belief; (2) receivers treat sharing as a signal of veracity <em>and</em> exaggerate the value of that signal; (3) receivers update equally on stories that the sharer finds credible and those that that she doesn’t (selection neglect); (4) receivers exhibit non-bayesian updating where the largest increases in their beliefs occur at lowest priors – all these factors combine to systematically boost beliefs in false stories. But which of these channels matters the most from a policy perspective, and constitutes an efficient target?</p>
+<p>Through counterfactual exercises, we find that correcting receivers about their friends’ sharing discernment would nearly eliminate learning, since sharer’s discernment is barely better than noise. Revealing sharers’ beliefs (among shared stories) would increase aggregate belief in true stories, but counterintuitively, it would also increase belief in false stories, albeit to a lesser extent. This is because sharers’ mean belief in false stories is quite high to begin with (0.51), so revealing sharer’s beliefs would bring the receiver closer to the sharer, but not closer to the truth. Revealing sharer’s beliefs in all stories (and not just shared ones) will also increase belief in true and false stories, but the increase for true stories would be much larger.</p>
+<p>Unfortunately, the only treatment that increases mean belief in true stories <em>and</em> reduces mean belief in false stories is the BOT’s signal. Here, the large impact does not come from increasing belief in true stories, but it comes from decreasing belief in false stories instead – which signals from the sharer are unable to do.</p>
+<p><!--A large literature in Psychology an Economics agrees that people are rarely Bayesian (@benjamin2019errors), but there is less agreement on what the default replacement should be. <!--People exhibit prior-biased inference (usually, base-rate neglect), preference-biased inference (usually, over-updating in the direction of favorable information), --></p>
+<!--we find that even though receivers rate their friends' discernment highly (stating their partners are likely to share true stories roughly 8 out of 10 times; that is, the signal value of sharing choice is 0.8), they _update_ quite differently.  -->
+<!-- Taken together, the results of this experiment suggest that people have adapted to the rise of social media by uniformly reducing trust in shared stories, but in a manner that still directionally biases them towards believing low-credibility information. A policy implication is to nudge sharers to better communicate their doubts when forwarding stories, and remind receivers to consider sharers’ intentions while updating. -->
+<p>Our findings contribute to multiple themes in the literature. On the sharer’s side, we contribute to literature that aims to understand why individuals share misinformation. Along with <span class="citation" data-cites="serra2021mistakes">Serra-Garcia and Gneezy (<a href="#ref-serra2021mistakes" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="altay2022if">Altay, Araujo, and Mercier (<a href="#ref-altay2022if" role="doc-biblioref">2022</a>)</span>, our paper is among the first to measure sharing choices as a function of the sender’s belief in the story. In contrast to these studies however, participants in our study make decisions in an environment that more closely resembles social media: we observe sharing decisions rather than intentions, and decisions are made for an audience of real-life friends rather than strangers. Furthermore, we elicit beliefs on a continuous rather than a binary or likert scale, which allows us to examine the relationship between uncertainty and sharing at a more granular level.</p>
+<p>A related contribution of this paper is to build a simple framework that separates the sender’s beliefs from other reasons or motivations for sharing. Our approach allows us to aggregate across an arbitrary number of reasons without taking a stance on what they might be<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<p>Second, the study contributes to the sparse literature on the impact of receiving misinformation. Several studies examine factors that affect the sharing of misinformation,(<span class="citation" data-cites="lazer2018science">Lazer et al. (<a href="#ref-lazer2018science" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="vosoughi2018spread">Vosoughi, Roy, and Aral (<a href="#ref-vosoughi2018spread" role="doc-biblioref">2018</a>)</span>) but little is known about the extent to which receiving misinformation affects people’s beliefs (<span class="citation" data-cites="serra2021mistakes">Serra-Garcia and Gneezy (<a href="#ref-serra2021mistakes" role="doc-biblioref">2021</a>)</span> is a recent exception).</p>
+<p>Third, the study is relevant to the literature that examines second-order-beliefs. It adds to the evidence that people are often mistaken about what their peers believe (e.g. <span class="citation" data-cites="bursztyn2020misperceived">Bursztyn, González, and Yanagizawa-Drott (<a href="#ref-bursztyn2020misperceived" role="doc-biblioref">2020</a>)</span>), and it finds evidence that people incorrectly assess the <em>value</em> of their peers beliefs.</p>
+<p>Finally, the study adds to the limited literature on misinformation in low-and-middle income countries. With the exception of <span class="citation" data-cites="badrinathan2021educative">Badrinathan (<a href="#ref-badrinathan2021educative" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="arechar2022understanding">Arechar et al. (<a href="#ref-arechar2022understanding" role="doc-biblioref">2022</a>)</span>, most large-sample studies of misinformation are limited to subjects from high-income countries, and it is not clear if results drawn from that literature generalize to these settings.</p>
+<p>The rest of this paper is organized as follows: Section 2 walks through the study’s empirical framework. Section 3 describes the experimental procedure. Section 4 discusses the <em>Sharers’</em> side of the results, and section 5 covers the <em>Receivers’</em> side. Section 6 concludes with implications, caveats, and directions for future research.</p>
+</section>
+<section id="theoretical-and-empirical-framework" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Theoretical and Empirical Framework</h1>
+<p>Let <span class="math inline">i</span> index a pair of friends in the study, with <span class="math inline">S_{i}</span> (she/her) denoting the sharer and <span class="math inline">R_{i}</span> (he/him) denoting the receiver. News stories indexed by <span class="math inline">j</span> appear on <span class="math inline">S_{i}</span>’s screen at random, and she must decide whether to share them with <span class="math inline">R_{i}</span> or not. First we discuss how <span class="math inline">S_i</span> makes her decisions, and then we discuss how <span class="math inline">R_i</span> updates from observing those decisions.</p>
+<!--
+First, we develop a simple model of how sharers decide whether or not to share a story. The idea is to model the sharing decision as a function of how likely the sharer thinks the story is true (i.e., her belief in the story's veracity, or just ``belief'' for short), and a range of unobservable, hard-to-enumerate factors that modulate the _extent_ to which she considers the story's truth when making her decision.
+
+Then, we switch to the receivers' side and model what the sharer's decision signals about the story's veracity. We do not make assumptions about how the receiver _updates her beliefs_ from that signal; that discussion is deferred to the receivers' results section, until after we have observed their updating behavior on objective, computer-generated clues.-->
+<section id="a-framework-for-sharing-decisions" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="a-framework-for-sharing-decisions"><span class="header-section-number">2.1</span> A Framework for Sharing Decisions</h2>
+<p>We think of the sharer’s choice as a (conscious or subconscious) gamble: she shares the story if her payoffs from sharing exceed those from <em>not</em> sharing. A wide range of factors may constitute these payoffs, but one of them is the story’s veracity <span class="math inline">v_j \in \small{ \{T, F\}}</span>.</p>
+<p>At the moment of sharing, <span class="math inline">S_i</span> does not know <span class="math inline">v_j</span> but has some prior belief (or private signal) <span class="math inline">p^S_{ij}</span> over it. Let <span class="math inline">d_{ij} \in \{1 (Shr), 0 (Not)\}</span> denote her decision and <span class="math inline">u^S_{ij}( d_{ij} | v_{j})</span> denote her conditional payoff from taking it. She sharers the story iff: <span class="math display">
+p^S_{ij} \cdot u^S_{ij}(Shr|T) + (1-p^S_{ij})\cdot u^S_{ij}(Shr|F) &gt; p^S_{ij} \cdot u^S_{ij}(Not|T) + (1-p^S_{ij})\cdot u^S_{ij}(Not|F) \\
+</span></p>
+<p>Let <span class="math inline">\Delta u^S_{ij}(v_j) = u^S_{ij}(Shr|v_j) - u^S_{ij}(Not|v_j)</span> denote <span class="math inline">S_i</span>’s net utility from sharing (relative to <em>not</em> sharing) <span class="math inline">j</span>, conditional on veracity. Then we can rewrite the above equation as: <span id="eq-srule-full"><span class="math display">
+\begin{aligned}
+&amp; \Delta u^S_{ij}(T) \cdot p^S_{ij} + \Delta u^S_{ij}(F) \cdot (1-p^S_{ij}) &gt; 0\\
+\implies &amp; \underbrace{\left(\Delta u^S_{ij}(T) - \Delta u^S_{ij}(F)\right)}_{\beta^1_{ij}} \cdot p^S_{ij}  +\underbrace{ \Delta u^S_{ij}(F)}_{\beta^0_{ij}}  &gt; 0\\
+\text{or } &amp; \frac{p^S_{ij}}{1-p^S_{ij}} &gt; \frac{-\Delta u^S_{ij}(F)}{\Delta u^S_{ij}(T)}\, \, \text{ if } \small{p^S_{ij},  \Delta u^S_{ij}(T) \neq 0}
+\end{aligned}
+\tag{1}</span></span></p>
+<!-- 
+1. $\Delta u^S_{ij}(F) \leq 0$
+2. $\Delta u^S_{ij}(T) \geq \Delta u^S_{ij}(F)$ 
+$$ 
+Pr(d_{ij} = Shr)  =  \beta_{0j} + \beta_{1j}  \cdot  p^S_{ij} + \beta_{2j}  \cdot  {p^S_{ij}}^2 
+$$  {#eq-s1-gen}
+
+That is, the probability of sharing is quadratic in sharer's belief, with coefficients that vary by story _and_ by sharer. 
+-->
+<!--
+Her belief in the story's veracity ($p^S_{ij}$) is one input, but holding belief constant, a wide range of other factors/motivations may nudge her to share the story.  Whether these motivations stem from a desire to inform others, unburden herself of a feeling, or shape her reputation, we assume that she cares _at least a little_ about the accuracy of the story when making her decision. Specifically, we assume (i) she never shares a story she _knows for certain_ is false; and (ii) her marginal (net) utility from sharing is higher if the story is true. To make this precise,
+
+Let $u^S_{ij}( d_{ij} | v_{j})$ denote her payoff (utility) from taking the decision $d^S_{ij}$ conditional on veracity  $v_j \in \small{\{\underline{T}rue, \underline{F}alse\}}$, and $\Delta u^S_{ij}(v_j) = u^S_{ij}(Shr|v_j) - u^S_{ij}(Not|v_j)$ denote $S_i$'s' **net utility** from sharing (relative to *not* sharing) $j$, conditional on its veracity. Then we can rewrite the above conditions as:
+
+We call these the **no disinformation** assumptions^[though they may as well be called "no ironic sharing" or "no humor" assumptions, since also rule out sharing something you know is false but is funny nonetheless]
+
+At the moment of sharing however, $S_{i}$ does not know if the story is true, yet her personal experiences -- and the story's characteristics -- allow her to form a belief about the likelihood of its truth. Let $p^S_{ij} \in [0,1]$ denote that belief^[we also refer to $p^S_{ij}$ as her prior or her private signal]. Then,  under expected utility,  $S_{i}$ decides to share the story if and only if:
+
+$$p^S_{ij} \cdot u^S_{ij}(Shr|T) + (1-p^S_{ij})\cdot u^S_{ij}(Shr|F) > p^S_{ij} \cdot u^S_{ij}(Not|T) + (1-p^S_{ij})\cdot u^S_{ij}(Not|F)$$
+
+Define $\tau^S_{ij} =  \frac{-\Delta u^S_{ij}(F)}{\Delta u^S_{ij}(   )}$, $\small{\Delta u^S_{ij}(T) \neq 0}$ as her **sharing threshold** for $j$; and let $odds(p) = \frac{p}{1-p}$, $\small{p \neq 1}$. Then, we can rewrite the above condition as:
+
+$$
+\begin{aligned}
+d^S_{ij} &= \mathbb{1}  \iff  p^S_{ij} \cdot \Delta u^S_{ij}(T) > -(1-p^S_{ij}) \cdot \Delta u^S_{ij}(F) \\
+& \iff \frac{p^S_{ij}}{1-p^S_{ij}} > \frac{-\Delta u^S_{ij}(F)}{\Delta u^S_{ij}(T)}\, \, \text{ if } \small{p^S_{ij},  \Delta u^S_{ij}(T) \neq 0}
+\end{aligned}
+$$ {#eq-srule-full}
+
+or:
+$$
+d_{ij} = \mathbb{1} \left\{odds(p^S_{ij}) >  \tau^S_{ij} \right\}
+$$ {#eq-srule}
+-->
+<p><a href="#eq-srule-full">Equation&nbsp;1</a> gives us the <strong>sharer’s decision rule:</strong> Sharer <span class="math inline">S_{i}</span> shares the story <span class="math inline">j</span> if and only if her belief in its veracity (expressed in odds) exceeds some threshold <span class="math inline">\tau^S_{ij}= \frac{-\Delta u^S_{ij}(F)}{\Delta u^S_{ij}(T)}</span>.</p>
+<p>The parameter <span class="math inline">\tau^S_{ij}</span> – the ratio of <span class="math inline">S_i</span>’s’ marginal <em>disutility</em> from sharing <span class="math inline">j</span> were it false to the marginal <em>utility</em> of sharing <span class="math inline">j</span> were it true – is a parameter of interest, for it encapsulates factors and motivations for sharing a story <em>other</em> than belief. It denotes the threshold (or barrier) a story needs to cross in the sharer’s mind to be worthy of sharing. We refer to it as the “sharing threshold” (or just threshold) henceforth.</p>
+</section>
+<section id="receivers-updates" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="receivers-updates"><span class="header-section-number">2.2</span> Receivers’ Updates</h2>
+<p>If <span class="math inline">S_{i}</span> decides to share story <span class="math inline">j</span>, <span class="math inline">R_i</span> forms an opinion about <span class="math inline">j</span>’s veracity (<span class="math inline">v_j</span>) not only from its contents, but also from the fact that it was shared by <span class="math inline">S_i</span>. A key goal of this study is to estimate what <span class="math inline">S_i</span>’s choice <em>signals</em> to <span class="math inline">R_i</span> about the story’s veracity <span class="math inline">v_j</span>. That is, we wish to estimate:</p>
+<p><span class="math display"> s(d_{ij}=shr) = \frac{Pr(d_{ij} = shr | v_j = T)\cdot{Pr(v_j = T)}}{Pr(d_{ij} = shr)}</span></p>
+<p>where <span class="math inline">s</span> maps <span class="math inline">S_i</span>’s decision <span class="math inline">d_{ij} \in \{shr, not\}</span> to its signal value. Often it will be easier to work with <span class="math inline">s</span> expressed as odds-ratio, i.e.&nbsp;<span class="math inline">s_{or} = \frac{s}{1-s}</span> <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. That is,</p>
+<!-- and $s^R(d_{ij})$ denotes the receiver's guess of that signal. Let $\hat{s(.)}, \hat{s(.)}^R$ denote sample estimates of these quantities respectively.  -->
+<!--Exactly half the stories shown to any participant in the study are true and exactly half are false; therefore, we can rewrite the equation above as:-->
+<p><span class="math display"> s_{or}(d_{ij}=shr) = \frac{Pr(d_{ij} = shr | v_j = T)}{Pr(d_{ij} = shr | v_j = F)}</span></p>
+<p>In addition to observing the sharer’s decisions in the first round (Reveal Sharer’s Decision or RSD), receivers in our study also observe other types of signals: they observe the sharer’s <em>belief</em> about how likely the story is true in the revealed-belief round (RSB), and a computer-generated random “guess” that is correct four out of five times in the BOT round.</p>
+<p>In general, the signal value of any action <span class="math inline">a</span> taken by the sharer (or the computer) across these rounds can be expressed as: <span id="eq-delta"><span class="math display">
+\begin{aligned}
+s_{or}^k(a_{ij}) &amp;= \frac{Pr(a = a_{ij} | v_j = T)}{Pr(a = a_{ij} | v_j = F)}, k \in \{RSD, RSB, BOT\}
+\end{aligned}
+\tag{2}</span></span></p>
+<p>Summarizing across the three types of rounds and simplifying notation, we have: <span id="eq-s-all"><span class="math display">
+s_{or}(a_{ij}) =
+\begin{cases}
+4 \text{ if } a_{ij} = T,  \frac{1}{4} \text{ if } a_{ij} = F &amp; \text{if round = BOT} \\
+\frac{Pr(a_{ij} = p^S_{ij}|T)}{Pr(a_{ij} = p^S_{ij}|F)}, p^S_{ij} \in [0,1) &amp;\text{if round = RSB}\\
+\frac{Pr(a_{ij} = d^S_{ij}|T)}{Pr(a = d^S_{ij}|F)}, d^S_{ij} \in \{shr, not\} &amp;\text{if round = RSD}\\
+\end{cases}
+\tag{3}</span></span></p>
+<p>We construct sample estimates of the “true” value of <span class="math inline">s_{or}(a_{ij})</span> from sharers’ data. Thus, to estimate the signal value of a share, we have: <span id="eq-s-rsc"><span class="math display">
+\widehat{s_{or}}(shr) = \frac{\sum_{ij} d_{ij} =shr| v_j = T}{\sum_{ij} d_{ij} =shr| v_j = F}
+\tag{4}</span></span></p>
+<p>To estimate the signal value of revealing the sharer’s belief, we bin the sharer’s beliefs into <span class="math inline">b_1, b_2, ... b_l</span>. (For example, we could bin beliefs into <span class="math inline">[0, 0.25) [0.25,0.5), (0.5, 0.75], (0.75,1]</span>). Then, we can construct a sample estimate of revealing that the sharer’s belief as:</p>
+<p><span id="eq-s-rsb"><span class="math display">
+\widehat{s_{or}}(p^s \in b_l) = \frac{\sum_{ij} p^s_{ij} \in b_l | v_j = T}{\sum_{ij} p^s_{ij} \in b_l | v_j = F}
+\tag{5}</span></span></p>
+<p>Now that we have expressions to estimate these signals’ value (<a href="#eq-s-rsb">Equation&nbsp;5</a>, <a href="#eq-s-rsc">Equation&nbsp;4</a>), we turn our attention to estimating what <em>receivers</em> believe them to be.</p>
+<p>An issue we run into immediately is that we only observe receivers’ <em>updates</em>. Inverting these updates into a signal value requires us to know what the receivers’ updating function looks like. Standard theory often models people as Bayesian, but a long literature in psychology and experimental economics finds that they are not (<span class="citation" data-cites="benjamin2019errors">Benjamin (<a href="#ref-benjamin2019errors" role="doc-biblioref">2019</a>)</span>). At the same time, there is little consensus on what the best alternative is. As such, we leave the updating function unspecified for now, and choose one later, based on participants’ updating behavior on computer generated signals.</p>
+<!-- Let $f(p, s)$ denote the receiver's belief-updating function. That is, given a prior $p$ and a signal $s$, the receiver's posterior  $p'$ is given by $p' = f(p, s)$ ^[Thus if the receiver were Bayesian, $f(p, s) = inv.odds(p \cdot s)$].    -->
+<!--Assume $r$ is increasing in $p, s$; and that there exists some monotonic transformation of $p, s$ such that -->
+</section>
+</section>
+<section id="sec-design" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Study Design</h1>
+<section id="participation-recruitment." class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="participation-recruitment."><span class="header-section-number">3.1</span> Participation &amp; Recruitment.</h2>
+<p>The study was carried out between November 2021 and June 2022 in 31 colleges across the country. It was advertised on campus through emails, posters, and direct-messages to student groups via social media. Subjects were invited to sign up with a friend or partner whom they knew in real life, and were connected with on social media. Individual sign ups were not allowed. To register, both partners completed a form where they provided details about themselves (demographics, political preferences, social media usage, etc.) <em>and</em> independently gave opinions about their partner. For instance, they guessed their partner’s political preferences and social media discernment.</p>
+<p>The experiments were conducted <strong>online</strong> (remotely) as well as <strong>on-campus</strong>. The decision was based on logistical constraints, such as the college’s academic calendar and covid restrictions. In the online version, participants chose a date (within the upcoming week) to participate on, and were emailed a link to the study on that date. They had 24 hours (each) from the receiving the link to finish their respective tasks. In the on-campus version, participants arrived at a venue at pre-specified slots on a given date, and completed the entire study in a single, hour-long session.</p>
+<p>There were tradeoffs between the two approaches – the online version allowed participants to play from home and was truer-to-life, but raised concerns about cheating. The on-campus version made the “lab-exercise” part salient, but allowed research-assistants to explain the study’s protocols clearly, as well as monitor compliance with them. In the end, however, there were no significant differences in participant behavior across the two approaches, except that the online data was noisier.</p>
+<p>The experiments were conducted using a custom platform I built on top of Qualtrics. The customization allowed us to dynamically generate captions, signals, and perform other updates at survey-time, and to pass on the sharer’s decisions to their partner’s screens.)</p>
+</section>
+<section id="sharers-workflow" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sharers-workflow"><span class="header-section-number">3.2</span> Sharer’s Workflow</h2>
+<p>In what follows, I describe the design of the on-campus study. The procedure for the online study is similar, unless otherwise specified.</p>
+<p>At the start of the study, one participant within each team is randomly assigned to be the <strong>sharer</strong>, and their friend becomes the <strong>receiver</strong>. The sharer completes their part of the study before the receiver begins<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p>The sharer’s part (“workflow”) consists of four rounds, as described below:</p>
+<ol type="1">
+<li><p><strong>Sharing Choices.</strong> The sharer sees previews of <span class="math inline">M \approx 20-24</span> news stories – just a headline and an image – on their screen. (See Fig ). They can scroll through these stories and share any (and as many) of them with their partner as they like. There are no special incentives for sharing: sharers are told to match their real-life behavior as best as possible, and share only those stories they would have shared in real life with this partner. They are also told (truthfully) that shared stories may appear on their partner’s screen with a caption (e.g.&nbsp;“&lt;sharer&gt; shared this story with you”), just as they would on social media.</p></li>
+<li><p><strong>Beliefs.</strong> After all sharing choices have been made<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>, the sharer sees the same <span class="math inline">M</span> stories again (in a randomized order), and reports how likely they believe each story is true, on a scale of 0 (surely false) to 100 (surely true). Sharers are <em>not</em> reminded of their sharing choice when answering this question<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>.</p></li>
+<li><p><strong>Explanations.</strong> Next, the sharer sees a random subset of <span class="math inline">K \approx 4</span> stories from the first round along with a reminder of their sharing decisions. They are asked to explain – in one or two sentences – <em>why</em> they decided to share (or not share) each of those <span class="math inline">K</span> stories.</p></li>
+<li><p><strong>Exposure</strong> The sharer sees a random subset of <span class="math inline">K \approx 4</span> stories from the first round, and is asked if they remember seeing this story in real life, before entering the study. They are also asked to guess if their <em>partner</em> has seen it. (We ask the <strong>exposure</strong> question (a) to confirm that stories seen by participants in the lab are not too different from the ones they see in their personal lives; and (b) to measure how <em>marginal</em> the sharer thinks they are to the receivers’ learning.)</p></li>
+</ol>
+<p>This completes the main rounds for the sharer, and an email is sent to the receiver to begin their part of the study.</p>
+</section>
+<section id="receivers-workflow" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="receivers-workflow"><span class="header-section-number">3.3</span> Receiver’s Workflow</h2>
+<p>The receiver’s workflow also consists of four rounds, as described below:</p>
+<ol type="1">
+<li><strong>Receiver’s Priors</strong>: The receiver sees the same <span class="math inline">M \approx 21</span> stories as the sharer and reports how likely they think each story is true, on a scale of 0 (surely false) to 100 (surely true). This round is identical to the “Beliefs” round for the sharer.</li>
+</ol>
+<p>The next three rounds have a common structure: in each round, the receiver sees <span class="math inline">\approx M/3</span> stories from the first round again (selected randomly without replacement), along with a <em>signal</em> about the story’s veracity. Having observed the signal, the receiver is asked to report their updated belief in the story (i.e., their posterior). The rounds are named after the type of signal revealed in them. These are:</p>
+<ol start="2" type="1">
+<li><p><strong>Reveal Sharer’s Decision (RSD)</strong>: The receiver sees <span class="math inline">M/3 \approx 7</span> stories from the first round along with their partner’s sharing decision. That is, they see each story accompanied by a caption: “[partner name] shared this story with you”, or “[partner name] saw the story but <strong>chose not to share it</strong> with you. Having seen this additional piece of information, the receiver reports their belief again. <em>Supplementary question</em> (second order belief): Additionally, receivers are also asked to <em>guess</em> how likely the sharer thought the story was true, given their sharing decision.</p></li>
+<li><p><strong>Reveal Sharer’s Belief (RSB)</strong>. The receiver sees <span class="math inline">M/3 \approx 7</span> stories from the first round along with their partner’s <em>belief</em> about the story, and asked to report their belief again. <em>Supplementary question</em> (second order belief): receivers are also asked to <em>guess</em> if the sharer would have chosen to share the story, given their belief.</p></li>
+<li><p><strong>Reveal Robot’s Clue (BOT)</strong>. For the final third of the stories, receivers are given a computer-generated clue that states “this story is true” or “this story is false”. The clue is drawn independently and has a <strong>four in five</strong> chance of being correct<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> Having seen this clue, the receiver is asked to report their belief again.</p></li>
+</ol>
+<p>This completes the main rounds for the receiver.</p>
+<p><strong>Concluding Workflow</strong></p>
+<p>Once both participants finished their workflows, they were told which stories in the study were true versus false, and provided links to the complete stories, sources, and fact-checks. Participants were paid a flat amount of Rs. 500 per team (or Rs. 250 each)<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>, but only if <em>both</em> partners completed their respective workflows. This was to reduce attrition, especially in the online study.</p>
+<p><strong>Design variations</strong>:</p>
+<p>Unlike the sharer’s workflow, the receiver’s workflow was not identical across participants. This subsection discusses the main variations.</p>
+<p>First, the order in which the three posterior rounds appear varied across participants, but was biased to prioritize Reveal Decision over Reveal Beliefs over BOT’s choice. (This is because the first two rounds have multiple questions per story, and are cognitively exhuasting). Second, for about one-third of the receivers, there was no separate “priors” round: prior and posterior for a story were elicited right after one another. (That is, the receiver sees a story and reports their prior, and on the next screen is shown the signal and prompted for their posterior. The process repeats for all <span class="math inline">M/3</span> stories in the round). This alternative design reduced noise but increased the time taken. Third, about two-thirds of receivers were reminded of their prior while eliciting their posterior, while others were not. Reminders reduced noise but did not affect the estimate or change statistical significance. Finally, the elicitation of second order beliefs in the “Revealed Decision” round was incentivized for a subset of participants: they were paid an additional Rs. 10 (about 50 cents adjusted for purchasing power) for every guess that was within 10 percentage points of the sharer’s answer.</p>
+</section>
+<section id="story-selection" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="story-selection"><span class="header-section-number">3.4</span> Story Selection</h2>
+<p>All participants saw between 20-24 stories, half of them true and half of them false, drawn from contemporary news and social media forwards. The set of stories was updated every couple of weeks to ensure relevance, which resulted in 109 unique stories across the study’s duration.</p>
+<p>About three-fourth of participants (i.e., pairs) saw stories selected by “method 1”, and one-fourth saw stories selected by “method 2”, described below:</p>
+<p><strong>Method 1</strong>: In this method, stories were selected for <em>balance</em>: that is, to reflect a wide range of topics, political leanings, and plausibility. In any set of stories selected by this method, about twelve (60%) were related to politics, religion or group-identity; four (20%) covered health or finance; and the remaining four were a miscellaneous mix of sports, entertainment or science. Exactly half the stories in each group (and therefore, in the set overall) were true, and the other half were false. Furthermore, within the political/identity-related set, true and false stories were equally distributed among narratives that favored the <em>Bharatiya Janata Party</em> (BJP) – currently in power at the center – and disfavored it. [^07-experiment-design-3]. We also attempted to balance stories on <em>plausibility</em>, so that not all true stories were obviously true, and not all false stories were obviously false.</p>
+<p>In the study’s pilots, we used follow-up surveys to ask participants how stories in the study compared to their own social media feeds, and if there were specific types that we missed. (We also paid a subset of participants to upload examples of such stories).</p>
+<p><strong>Method 2</strong>: Stories on social (or any) media are rarely balanced on parameters such as those above<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>. In this method, stories were selected in a manner that reduced researcher-selection bias, and did not attempt a balance of topics or perspectives. Exactly half the stories in any set were true and the other half false, but true stories were selected at random from the front page of five leading Indian newspapers, and false stories were selected from the home-page of five leading fact-checking websites. (See Table 2 notes for the list. Table 2 also compares mean priors, exposure-rates, and sharing rates across the two approaches.)</p>
+</section>
+</section>
+<section id="sharers" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Sharers</h1>
+<p>We begin by analyzing sharers’ beliefs and sharing choices. Figure plots sharers’ mean belief in true vs.&nbsp;false stories, and their probability of sharing true vs.&nbsp;false stories respectively. We see that:</p>
+<ol type="1">
+<li><p><em>Sharers are able to discern true stories from false ones</em>. Sharers’ mean belief in true stories is greater than their mean belief in false stories, and the difference is statistically significant. At the same time, sharers appear to be better at identifying true stories as true than identifying false stories as false;</p></li>
+<li><p><em>Sharers are much less discerning with their sharing decisions</em>. Sharers are <em>slightly</em> more likely to share true stories than false ones (<span class="math inline">Pr(T|share) = 0.512</span>). The difference is statistically significant (t-stat: 2.65) but tiny. Thus, participants’ <em>sharing discernment</em> is worse than their <em>belief discernment</em>.</p></li>
+</ol>
+<p>These aggregate patterns are consistent with other studies in the literature. Figure provides estimates from a set of recent experiments. In most cases, participants are more likely to share false stories than their belief discernment would suggest.</p>
+<!--Also, in line with other research we find participants are more likely to belief (and share) stories that favor their political beliefs. But the differences in our setting are quite small).-->
+<!-- 
+However, we can go further than the literature and estimate the "true" informational / signal value of revealing the sharers' _beliefs_ to a receiver. In figure \ref{fig:PDF}, panel (a) plots  the kernel density of sharers' beliefs in true stories (green) vs. false ones (red), and panel (b) plots the _ratio_ of these densities (i.e., it plots $\delta(a = p^S) = \frac{Pr(a = p^S | T)}{Pr(a = p^S | F)}$). We estimate the ratio as a linear relationship. That is, -->
+<section id="sharing-as-a-function-of-belief" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sharing-as-a-function-of-belief"><span class="header-section-number">4.1</span> Sharing as a function of belief</h2>
+<p>Where does this gap come from? To answer that, we turn to examining sharing choices as a function of beliefs. Figure plots the likelihood of sharing a story against the sharer’s <em>own</em> stated belief in it. (Beliefs are binned at multiples of 0.1, and standard errors are clustered at the individual level).</p>
+<p>We see that the probability of sharing consistently increases with belief in the story’s veracity. The relationship appears to be convex, with sharing rates rising slowly at first and rapidly thereafter. Interestingly, sharing rates remain significantly different from zero (0.25) even when beliefs are low (under 0.1), and different from one (0.63) even when beliefs are high (above 0.9). Thus, we see that (i) sharing is increasing in belief, (ii) people don’t share everything they believe, and (iii) don’t believe everything they share – at least not fully. <!--
+Why would stories be shared even when the sharer thinks they are more likely false than true?
+Undoubtedly, some of this is noise / error: people accidentally share stories they didn't mean to, or forget their decision when reporting their beliefs (recall that sharers are _not_ reminded of their choices when eliciting beliefs). We read through people's  _explanations_ for their sharing choices in this range, and find that such errors only explain less than a tenth of sharing decisions. In the remaining cases, sharers give a variety of reasons for making this choice, but most of them are some form of: XX 
+--></p>
+<p>Fig plots a quadratic fit of sharing as a function of belief, separately by story. We see that sharing remains increasing in belief for nearly all stories, though slopes vary. We also see that some stories are inherently more “shareable” than others across the belief spectrum. We refer to this as the story’s <em>shareability</em>. We treat shareability as a black-box, the component of sharing that is unexplained by belief. We are less interested in what features are common to stories with high “shareability”, with one exception: the story’s veracity: false stories are more likely to be shared <em>across all levels of belief</em>.</p>
+<p><!-- XX We also explore the messages sharers send --> ]</p>
+</section>
+</section>
+<section id="receivers" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Receivers</h1>
+<section id="updating-on-bot-clues." class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="updating-on-bot-clues."><span class="header-section-number">5.1</span> Updating on BOT Clues.</h2>
+<p>First, we observe how receivers update on computer-generated signals. (Recall that in this round, the signal is a “BOT” generated guess about the story’s veracity that is correct with probability 0.8). Unlike signals based on their partner’s decisions or beliefs, computer-generated signals have a constant value known to the receiver, which allows us to trace their posteriors at different priors and thus estimate their updating function.</p>
+<p>Figure plots a binscatter of receivers’ posteriors versus priors. The Bayesian benchmark is shown for comparison. We see that receivers update much less than a Bayesian would (conservatism bias, see <span class="citation" data-cites="mobius2015treasure">Mobius, Phan, and Szeidl (<a href="#ref-mobius2015treasure" role="doc-biblioref">2015</a>)</span>) in most of the range, though they also update <em>more</em> than a Bayesian would at extremes priors when the signal contradicts them<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>. This behavior is consistent with both prior-biased inference (see <span class="citation" data-cites="benjamin2019errors">Benjamin (<a href="#ref-benjamin2019errors" role="doc-biblioref">2019</a>)</span>), and with the mechanical fact that a confirming signal has little room to push someone’s priors when they are already at the extreme.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>.</p>
+<p>Irrespective of the underlying mechanism however, we see that (i) a simple straight line approximates receivers’ updating behavior quite well, and that (ii) receivers’ updates are symmetric: that is, updates on TRUE and FALSE signals are of the same magnitude but in opposite directions. Thus, we assume that receivers’ updating function – given a prior <span class="math inline">p</span> and a signal <span class="math inline">s</span> – takes the form:</p>
+<p><span id="eq-moments-basic"><span class="math display">
+f(p, s) =
+\begin{cases}
+(1- c(s)) \cdot p + c(s)  &amp;\text{ if } s \in [0.5, 1] \\
+(1 - c(1-s)) \cdot p  &amp;\text{ if } s \in [0, 0.5]
+\end{cases}
+\tag{6}</span></span></p>
+<p>where <span class="math inline">c(s), s \in [0.5, 1]</span> is the y-intercept of the best-fit line. Table 2 plots these fits using a simple OLS of posteriors on priors. We focus our discussion on columns (1)-(4) which correspond to the case when the BOT guesses the story to be true; the discussion for columns (5)-(8), for updating on negative signals is similar.</p>
+<p>In column (3) we see slight, insignificant coefficients on whether the signal matched<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a> the sharer’s prior (“polarity”), and whether the story’s politics, where applicable, matched the receiver’s (“concordance”)<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>. Column (4) uses a TOBIT instead of an OLS to correct for right-censoring at prior = 1, but doesn’t change the term of our interest, <span class="math inline">c(s)</span>. Interpreting the constant term is difficult with story-fixed effects; thus, we use column (1) as our main specification.</p>
+<p>We have at least two moment conditions for <span class="math inline">c(s)</span>: first, the intercept for <span class="math inline">s=0.5</span> should be 0, and second, the intercept at <span class="math inline">s=0.8</span> should match what we see in the data (that is, <span class="math inline">\hat{c}(0.8) = 0.26</span> from table 2 column 1). We also require that <span class="math inline">c(s)</span> increases in <span class="math inline">s</span>, at least for <span class="math inline">s \in [0.5, 1]</span>. Several functions can satisfy these conditions, but the simplest assumes that the intercept is proportional to signal strength. That is, <span id="eq-baseline"><span class="math display"> \frac{c(s)}{c(0.8)} = \frac{s - 0.5}{0.8 - 0.5} \implies s = 0.5 + 0.3 \cdot \frac{ c(s)}{{c}(0.8)}
+\tag{7}</span></span></p>
+<p>We use <a href="#eq-baseline">Equation&nbsp;7</a> as our baseline specification to translate receivers’ updates into a signal strength. We also use a second specification where the intercept is proportional to signal strength when it’s expressed in log-odds. That is, <span id="eq-logodds"><span class="math display">
+\begin{aligned}
+\frac{c(s)}{{c}(0.8)} = \frac{ln(s_{or}) - ln(0.5/0.5)}{ln(0.8/0.2) - ln(0.5/0.5)} \\
+\implies s_{or} = 4^{\frac{c(s)}{c(0.8)}}
+\end{aligned}
+\tag{8}</span></span></p>
+<p>In addition to satisfying <a href="#eq-moments-basic">Equation&nbsp;6</a> and the constraints above, this specification carries the implication that people update fully when presented with a signal that is a 100% right. That is, <span class="math inline">c(1) = 1</span>. We use the sample analogues of equations (<a href="#eq-baseline">Equation&nbsp;7</a>, <a href="#eq-logodds">Equation&nbsp;8</a>) to construct our estimates of what receivers think is the signal value of sharer’s decisions or beliefs.</p>
+<!--Finally, it can also be seen that people are far from Bayesian: not only are updates _smaller_ than what a Bayesian benchmark would predict for a signal of this precision, but they are also inconsistent with the more generalized form, where people discount signals and/or priors with a fixed elasticity (i.e., Grether's model. See XX). Thus, instead of assuming either of those, we will use a simple OLS to model receivers' updating behavior. -->
+</section>
+<section id="updating-on-sharers-decision-to-share-a-story" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="updating-on-sharers-decision-to-share-a-story"><span class="header-section-number">5.2</span> Updating on sharers’ decision to <em>share</em> a story</h2>
+<p>Do receivers think a story is more likely to be true because their partner shared it? The answer is yes. Receivers’ beliefs increase by 4.09 pp (s.e. 0.44) on average, with most of the change occuring at low (receiver) priors. Figure plots receivers’ priors (X axis) versus posteriors after learning that their partner shared a story with them. (Receivers’ updates from learning the BOT though the story was TRUE are plotted for comparison). Since the mean change appears fairly linear (as it did in the BOT’s case), we fit a straight line as before and convert the intercept into a signal strength using <a href="#eq-baseline">Equation&nbsp;7</a>.</p>
+<p>We find that receivers update as if their partner’s choice to share a story with them has a signal value of 0.66 (s.e. 0.02). (The estimate using <a href="#eq-logodds">Equation&nbsp;8</a> is 0.69 (s.e. 0.01) – see Table 4). This is significantly higher than the <em>actual</em> value of the signal, which is 0.51 (s.e. 0.01). The difference is large and meaningful: receivers update as if there’s a two-in-three chance that a story is true if it is forwarded by their friend, whereas in reality (or at least in the sample), the chance is little better than a coin-toss. This suggests that sharing <em>leads</em> to increased belief among receivers. <!--In conjunction with exposure effects (@p)--></p>
+<p>This gap between the true value of the signal (0.51) and receivers’ estimate of it (0.66) can be interpreted in at least two ways. The first is that receivers overestimate how good their friends are at discerning true stories from false ones – i.e., they overestimate their friends’ belief discernment. The second is that they are right about their friends’ belief discernment, but fail to appreciate that their friends’ <em>sharing</em> discernment can be different from – and lower than – their belief discernment.<!--sentence/para on comparing binary signal vs. a continuous spectrum of signals --> To find the right interpretation, we next examine receivers’ updates from learning sharers’ beliefs.</p>
+</section>
+<section id="updating-on-sharers-beliefs-about-a-story" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="updating-on-sharers-beliefs-about-a-story"><span class="header-section-number">5.3</span> Updating on sharers’ <em>beliefs</em> about a story</h2>
+<p>Unlike the sharer’s decisions or the BOT’s guesses, sharer’s beliefs are not binary: they are elicited on a continuous scale between 0 and 1<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>. Every level of belief corresponds to its own signal value (see <a href="#eq-s-all">Equation&nbsp;3</a>). Figure plots the estimate of this signal value (odds ratio) at each level of sharer’s belief. We see that sharers’ beliefs <em>are</em> informative about a story’s truth: when sharers are almost certain a story is false, the odds that the story is in fact true, are 0.3 (signal value: 0.23); and when sharers are almost certian a story is true, the odds that the story is in fact true are 1.5 (signal value: 0.59).</p>
+<p>What about receivers’ perception of these signal values? Instead of construcing a continuous estimate, we discretize the distribution into four quarters ([0-0.25), [0.25,0.5), (0.5, 0.75], (0.75, 1]) and compare receiver’s estimate to the mean signal value in each quarter. Table 5 presents the comparison. We see that receivers’ estimates are higher in magnitude for each quarter. If we restrict ourselves to the case when sharers <em>strongly</em> believe a story (sharer’s belief is at least 0.9), we find that receivers update as if their friends’ expression of near-certainty has a signal value of 0.81 (s.e. 0.02). The <em>true</em> value, as we saw previously, is 0.59. (See Table 4, column 5). Estimates remain similar if we use 0.85 or 0.95 as the cutoff for “strong beliefs” instead.</p>
+<p>Together, these results support the first interpretation of results discussed in the previous section, but not the second: receivers (i) over-estimate their friend’s discernment in general, both for beliefs and for sharing (ii) but they do <em>not</em> treat sharing and beliefs as equally informative, and appreciate that the sharer’s belief discernment is higher than their sharing discernment.</p>
+</section>
+<section id="sharing-is-a-coarse-signal" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sharing-is-a-coarse-signal"><span class="header-section-number">5.4</span> Sharing is a coarse signal</h2>
+<p>We saw previously (Figure ) that people share stories at varying levels of belief. But do receivers recognize this variation adequately? That is, are their updates <em>larger</em> on stories that their partner believed <em>strongly</em> , and smaller on stories that their partner did <em>not</em> believe as strongly but shared anyway, perhaps because the story felt important, interesting, or otherwise worthy of sharing? We attempt to answer these questions in multiple ways.</p>
+<p>First, we group shared stories by senders’ beliefs, and see if receivers update differently across these groups. Fig (c) plots receivers’ priors vs.&nbsp;posteriors upon learning the story was shared by their partner (like Figure ), except this time we group shared stories based on whether the senders’ belief lay in the range [0,0.25), [0.25, 0.5), (0.5, 0.75] or (0.75, 1]. We see <em>some</em> differential updating across these groups, but the difference is not significant. (This can also be seen in Table 6, where we translate the mean-update for each group into its corresponding signal value). In contrast, Panel (c) plots receivers’ updates from learning the sharers’ <em>beliefs</em> directly, among stories that the sharer decided to share<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a>. Here, we see much more differentiation across the four groups, indicating that there was indeed information in shares’ beliefs that the receivers could not glean. <!--We repeat this exercise in Appendix fig XX, but group shared stories by the quartile of the sharers' belief instead and find no meaningful difference. (Roughly, this corresponds to splitting the range at 0.5, 0.73 and 0.9).--></p>
+<p>Another way to see this information is through Figure . In it, we plot the mean change in receivers’ beliefs (y axis) against the <em>sharer’s</em> belief on the x-axis among shared stories. If receivers were able to infer sharers’ beliefs, we would expect the series corresponding to “revealed-beliefs” to have a positive slope. Instead, the slope is not statistically different from zero, and is in fact slightly negative<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>. In contrast, receivers appear to update in the right direction – and meaningfully so – when the sharers’ beliefs are revealed instead. (In fact, receivers’ mean update is zero when sharers’ belief is 0.5, negative below 0.5, and positive above it, as we would expect)..</p>
+</section>
+<section id="second-order-beliefs" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="second-order-beliefs"><span class="header-section-number">5.5</span> Second-order Beliefs</h2>
+<p>To get a better sense of why receivers don’t update differentially on shared stories, we ask receivers to <em>guess</em> sharers’ beliefs and sharing decisions. That is, (i) in the revealed-sharing round, once the receiver has seen the sharer’s decision and reported their posterior, we ask them to guess what the sharer’s belief in the story was; and (ii) in the revealed-belief round, once the receiver has seen the sharer’s belief and reported their posterior, we ask them to guess whether the sharer chose to share the story or not.</p>
+<p>Receivers appear to be quite bad at either task. Figure plots receivers’ <em>guess</em> of the sharer’s belief against the sharer’s actual belief, for shared stories. Receivers’ guesses appear to be noise rather than systematic under or over-estimates. Incentivizing receivers’ guesses<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> improves their performance, but not tremendously. <!--In Appendix figure XX we repeat this exercise for stories that _weren't_ shared, and find a similar pattern. --></p>
+<p>Next, we explores receivers’ predictions about sharing choices. Receivers make both Type I and Type II errors in their predictions, classifying not-shared stories as shared and shared-stories as not-shared (Recall that receivers are <em>told</em> the sharer’s belief before being asked to guess the sharers’ decision).</p>
+</section>
+<section id="aggregating-results-for-social-learning" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="aggregating-results-for-social-learning"><span class="header-section-number">5.6</span> Aggregating results for social learning</h2>
+<!--In the previous section we saw that revealing the sharer's belief (instead of the sharing choice) allows receivers to update in the direction of the sharer's. But does doing so bring them any closer to the truth? -->
+<p>So far, we have examined multiple channels (mechanisms) through which receivers update in a biased manner. For instance, they over-estimate the informativeness of sharer’s beliefs and sharing decisions; and they ignore how a story’s characteristics can cause it to be shared even at low beliefs. In this section, we turn our attention to examining the relative impact of these channels on receivers’ (mis)learning. How much closer would receivers be to the truth in the absence of one or more of these mechanisms?</p>
+<p>To answer that question, we conduct a set of counterfactual exercises. Receivers in our data see sharers’ choices for one-third of stories, and sharers’ beliefs for another third. However, these choices and beliefs are available to the researcher for <em>all</em> stories. We take sharers’ decisions, sharers’ beliefs, and receivers’ priors as given; and construct estimates for what receivers’ posteriors would be under various scenarios. The scenarios are:</p>
+<ol type="1">
+<li>BOT: receivers see computer-generated signals for all stories.</li>
+<li>RSB: receivers see sharer’s beliefs for all stories.</li>
+<li>RSB.SC: receivers see sharer’s beliefs in <em>shared</em> stories</li>
+<li>SC: receivers see sharer’s decision for all stories.</li>
+<li>SCT: receivers see sharer’s decision for all stories, but know that these decisions are largely uninformative (i.e., <span class="math inline">\hat{s} = 0.51</span>)</li>
+</ol>
+<p>Predictions for (1), (4) and (5) are generated using <a href="#eq-baseline">Equation&nbsp;7</a>. Predictions for (2) &amp; (3) are generated through regressing receivers’ posteriors on sharer’s priors and their own, from the revealed-belief round. For channels (3) &amp; (4), we assume receivers’ beliefs remain unchanged in stories that the sharer did not share. Figure compares the mean updates under each of these scenarios, split by whether receiver’s prior was above or below 0.5.</p>
+<p>We find that correcting receivers about their friends’ sharing discernment (SCT) nearly eliminates all updating, since sharer’s discernment is barely better than noise. Revealing sharers’ beliefs among shared stories (RSB:SC) increases aggregate belief in true stories, but counterintuitively, it also increases belief in false stories, albeit to a lesser extent. This is because shared stories have higher priors to begin with, and sharers’ mean belief in false stories is high as well (0.51). Thus, revealing it to the receiver brings them closer to the sharer’s belief, but not closer to the truth. Revealing the sharer’s belief for <em>all</em> stories (RSB) addresses this selection problem partially: mean belief in true and false stories <em>still</em> increases, but the gap between belief in true and false stories is bigger.</p>
+<p>Unfortunately, the only treatment that appears to increase mean belief in true stories <em>and</em> reduce mean belief in false stories is the BOT’s signal. Here, the large impact does not come from increasing belief in true stories, but from decreasing belief in false stories instead. This is explained by the fact that receivers have high belief in true stories to begin with, so there is less room for the signal to correct them. But there is much more scope to reduce their belief in false stories, which the BOT manages to do. Sharer’s beliefs and decisions cannot do this, since sharers suffer from the same problem as receivers (namely, high belief in false stories).</p>
+</section>
+</section>
+<section id="conclusion" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Conclusion</h1>
+<p>It is no surprise that people’s beliefs are more nuanced than what their sharing choices on social media indicate. Confirming a wider finding in the literature, participants in our experiment are more likely to share misinformation than they are to believe it. However, our experiment extends that literature by exploring <em>why</em> that might be the case and it measures the impact of that discrepancy on people most likely to receive these stories – i.e., the sharers’ friends and family.</p>
+<p>We find that the sharer’s choice to share a story significantly increases with belief in the story’s veracity, but belief is not enough. Low beliefs are not a barrier to sharing, nor is certainty sufficient: stories that sharers think are less than 50% likely to be true are still shared about 25% of the time; and stories that sharers think are at least 99% likely to be true are shared about 70% of the time. These probabilities vary by story, but some stories are inherently more “shareable” than others. It is difficult to identify the features that unite them, with one exception: these stories are more likely to be false.</p>
+<p>Put differently, false stories are more likely to be shared <em>across all levels of belief</em>. Where does this gap in shareability come from? A hint is offered by the story-selection method: although all participants in our experiment see an exact 50-50 split of true vs.&nbsp;false stories, there is no gap in shareability among stories selected through our first method (selected for balance across plausibility, political leaning, formatting, and other parameters) but the gap is pronounced in our second method (random sample from leading newspapers &amp; fact-checking websites).</p>
+<p>Turning to the impact on receivers, we find that this sharing of false news stories is especially consequential because receivers (i) <em>do</em> treat their friends’ decision to share a story as a signal about its veracity, (ii) over-estimate the value of the signal by a wide margin (64% instead of 51%), (iii) ignore heterogeneity in a story’s shareability, thereby updating by the same amount on stories sent because the sharer found them credible and those sent because she found them “shareable” even at low priors. Finally, (iv) receivers update the most when their priors are at their lowest, a peculiar form of non-bayesian updating that disproportionately biases them to increase beliefs in false stories when the signal arrives from a trusted source.</p>
+</section>
+<section id="tables" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Tables</h1>
+
+</section>
+<section id="figures" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Figures</h1>
+
+</section>
+<section id="bibliography" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Bibliography</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-altay2022if" class="csl-entry" role="doc-biblioentry">
+Altay, Sacha, Emma de Araujo, and Hugo Mercier. 2022. <span>“<span>‘If This Account Is True, It Is Most Enormously Wonderful’</span>: Interestingness-If-True and the Sharing of True and False News.”</span> <em>Digital Journalism</em> 10 (3): 373–94.
+</div>
+<div id="ref-arechar2022understanding" class="csl-entry" role="doc-biblioentry">
+Arechar, Antonio Alonso, Jennifer Nancy Lee Allen, Rocky Cole, Ziv Epstein, Kiran Garimella, Andrew Gully, Jackson G Lu, et al. 2022. <span>“Understanding and Reducing Online Misinformation Across 16 Countries on Six Continents.”</span>
+</div>
+<div id="ref-badrinathan2021educative" class="csl-entry" role="doc-biblioentry">
+Badrinathan, Sumitra. 2021. <span>“Educative Interventions to Combat Misinformation: Evidence from a Field Experiment in India.”</span> <em>American Political Science Review</em> 115 (4): 1325–41.
+</div>
+<div id="ref-benjamin2019errors" class="csl-entry" role="doc-biblioentry">
+Benjamin, Daniel J. 2019. <span>“Errors in Probabilistic Reasoning and Judgment Biases.”</span> <em>Handbook of Behavioral Economics: Applications and Foundations 1</em> 2: 69–186.
+</div>
+<div id="ref-bursztyn2020misperceived" class="csl-entry" role="doc-biblioentry">
+Bursztyn, Leonardo, Alessandra L González, and David Yanagizawa-Drott. 2020. <span>“Misperceived Social Norms: Women Working Outside the Home in Saudi Arabia.”</span> <em>American Economic Review</em> 110 (10): 2997–3029.
+</div>
+<div id="ref-chandrasekhar2018signaling" class="csl-entry" role="doc-biblioentry">
+Chandrasekhar, Arun G, Benjamin Golub, and He Yang. 2018. <span>“Signaling, Shame, and Silence in Social Learning.”</span> National Bureau of Economic Research.
+</div>
+<div id="ref-garimella2020pol" class="csl-entry" role="doc-biblioentry">
+Garimella, Kiran, and Dean Eckles. 2020. <span>“Images and Misinformation in Political Groups: Evidence from WhatsApp in India.”</span> arXiv. <a href="https://doi.org/10.48550/ARXIV.2005.09784">https://doi.org/10.48550/ARXIV.2005.09784</a>.
+</div>
+<div id="ref-lazer2018science" class="csl-entry" role="doc-biblioentry">
+Lazer, David MJ, Matthew A Baum, Yochai Benkler, Adam J Berinsky, Kelly M Greenhill, Filippo Menczer, Miriam J Metzger, et al. 2018. <span>“The Science of Fake News.”</span> <em>Science</em> 359 (6380): 1094–96.
+</div>
+<div id="ref-mobius2015treasure" class="csl-entry" role="doc-biblioentry">
+Mobius, Markus, Tuan Phan, and Adam Szeidl. 2015. <span>“Treasure Hunt: Social Learning in the Field.”</span> National Bureau of Economic Research.
+</div>
+<div id="ref-pennycook2021shifting" class="csl-entry" role="doc-biblioentry">
+Pennycook, Gordon, Ziv Epstein, Mohsen Mosleh, Antonio A Arechar, Dean Eckles, and David G Rand. 2021. <span>“Shifting Attention to Accuracy Can Reduce Misinformation Online.”</span> <em>Nature</em> 592 (7855): 590–95.
+</div>
+<div id="ref-PennycookTrends" class="csl-entry" role="doc-biblioentry">
+Pennycook, Gordon, and David G. Rand. 2021. <span>“The Psychology of Fake News.”</span> <em>Trends in Cognitive Sciences</em> 25 (5): 388–402. https://doi.org/<a href="https://doi.org/10.1016/j.tics.2021.02.007">https://doi.org/10.1016/j.tics.2021.02.007</a>.
+</div>
+<div id="ref-serra2021mistakes" class="csl-entry" role="doc-biblioentry">
+Serra-Garcia, Marta, and Uri Gneezy. 2021. <span>“Mistakes, Overconfidence, and the Effect of Sharing on Detecting Lies.”</span> <em>American Economic Review</em> 111 (10): 3160–83.
+</div>
+<div id="ref-thaler2021supply" class="csl-entry" role="doc-biblioentry">
+Thaler, Michael. 2021. <span>“The Supply of Motivated Beliefs.”</span> <em>arXiv Preprint arXiv:2111.06062</em>.
+</div>
+<div id="ref-vosoughi2018spread" class="csl-entry" role="doc-biblioentry">
+Vosoughi, Soroush, Deb Roy, and Sinan Aral. 2018. <span>“The Spread of True and False News Online.”</span> <em>Science</em> 359 (6380): 1146–51.
+</div>
+</div>
+</section>
+
+
+
+<div id="quarto-appendix" class="default"><section id="appendix" class="level1 appendix" data-number="10"><h2 class="quarto-appendix-heading"><span class="header-section-number">10</span> Appendix</h2><div class="quarto-appendix-contents">
+
+<section id="figures-1" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="figures-1"><span class="header-section-number">10.1</span> Figures</h2>
+
+</section>
+<section id="a-note-on-the-sharing-threshold" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="a-note-on-the-sharing-threshold"><span class="header-section-number">10.2</span> A Note on the Sharing Threshold</h2>
+<p>The sharing threshold modulates the extent to which the sharer’s belief (i.e., <span class="math inline">p^S_{ij}</span>) matters to their sharing decision: stories that have a high threshold are shared only when they are strongly believed; whereas stories with a low threshold may be shared at a wider range of beliefs<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a>. What kind of stories would lend themselves to low thresholds?</p>
+<ul>
+<li>Novel claims that are fun if true, but harmless if false.</li>
+<li>Information that is <em>extremely</em> useful if true and slightly harfmul if false.</li>
+</ul>
+<p>A <em>low</em> threshold indicates that to the sharer, the net utility from sharing the story (if it were true) strongly exceeds the net disutility from sharing (if it were false); whereas a high threshold indicates a balance or a reversal.</p>
+<p>What kind of stories would lend themselves to this structure? <!-- 
+Fig XX shows a screenshot of a WhatsApp forward that went viral in India in the summer of 2018. The forward -- accompanied by grisly images -- claimed that child traffickers were prowling the neighborhood to kidnap children and harvest their organs for profit; and urged parents to be vigilant and look out for suspicious strangers. Over the next few months, this single rumor led to mob-lynchings in over a hundred villages and towns across the country. (In _all_ cases, victims were innocent strangers in the wrong place at the wrong time). Journalistic accounts suggest that members who forwarded the rumor weren't _sure_ if it was true, but shared it anyway, and would do so again (XX).  The risk was simply too high: Any censure they would face from their friends and neighbors - should the story turn out to be false -- was far outweighted by the benefit of warning them, should the story be true.  In other words, $\Delta u(T) >> -\Delta u(F) $, which meant the story was worth sharing even if their _own_ belief was low. ^[The problem is that they did not share the degree of their _own doubt_, leaving the burden of verification to others.] --></p>
+<p>A similar payoff structure can apply to a wide range claims, such as dubious health advice (e.g.&nbsp;“Drinking ginger tea reduces the chances of catching Covid” (XX), or financial scams masquerading as government welfare schemes (“The prime minister announces new policy to give interest-free loans to families with marriage-age daughters. To apply, please provide your personal details here.”). Scams of this nature are especially likely to occur in communities where (i) a history of welfare schemes makes such claims credible; and (ii) prior exposure to the internet and its scams is lacking.</p>
+<p>From the sharer’s rule (<a href="#eq-srule-full">Equation&nbsp;1</a>), it follows that the probability of sharing a story is decreasing in the threshold <span class="math inline">\tau^S_{ij}</span> and increasing in belief, <span class="math inline">p^S_{ij}</span>. That is, a story may be shared widely if (1) it tends to have a low threshold; or (2) it tends to be strongly believed. Of course, the two channels are not mutually exclusive, but it is helpful to distinguish between them nonetheless. Why is that so?</p>
+<p>The reason is that the channel affects the <em>value</em> of the sharer’s choice to her receivers. If sharers’ beliefs (private signals) are correlated with a story’s veracity, and her probability of sharing is increasing in belief, a receiver who cares about accuracy should update their own beliefs upwards upon learning that their partner shared the story<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a>.)</p>
+<p>However, the <em>extent</em> of that update depends on the channel: updates should be larger for stories shared due to strong beliefs, and smaller for stories shared due to low thresholds. Receivers who do not make this distinction will systematically over-update from their friend’s share in the latter case.</p>
+<p>For now, we allow <span class="math inline">\tau^S_{ij}</span> to vary by story/headline: <span class="math inline">S</span> may share some stories even if she isn’t too sure of their truth; while she may share other stories only if she has a high degree of faith in them.</p>
+<p>The threshold parameter <strong><span class="math inline">\tau^S_{ij} = \frac{-\Delta u^S_{ij}(F)}{\Delta u^S_{ij}(T)}</span></strong> is of special interest, and its relationship with the sharer’s belief merits further discussion.</p>
+<p>In this dicussion, we will restrict ourselves to a specific sharer, so we may think of beliefs and thresholds as being a property of the <em>stories</em> rather than the individual. –&gt;</p>
+</section>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This isn’t to say that people communicate these things perfectly in regular conversations, but that it is easier to convey – or read! – doubt and uncertainty in those conversations. <!--There is less room to read/convey tone through voice or facial expressions, and less opportunity to ask or offer clarifications--><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Essentially, a thin layer of javascript programmed on top of Qualtrics by the author. See https://github.com/jimmy-narang/SVB for the code repository<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The pronouns are hypothetical and do not reflect participants’ actual gender identity<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>In truth, we slightly over-sample shared stories because sharing rates are low<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Later on, we simplify these variable(s) into a story-specific fixed effect, a choice justified by empirical patterns in the data.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><span class="math inline">\hat{s}</span> is just the sharing discernment expressed as a signal instead of an odds ratio<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>This pattern is not specific to updates on sharing decisions. Receivers exhibit this pattern even with updates on computer-generated signals and revealed beliefs. In ongoing work, I find a similar pattern in data from other existing studies<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>This is surprising, since sharers and receivers are real-life friends who might be expected to broadly guess each others’ beliefs. However, we find that <em>within</em> a pair of friends, sharer’s and receiver’s priors about the same news story are quite poorly correlated (0.2), which could explain receiver’s inability to guess sharer’s beliefs accurately.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>For sophisticated models that examine specific motivations for sharing, see <span class="citation" data-cites="thaler2021supply">Thaler (<a href="#ref-thaler2021supply" role="doc-biblioref">2021</a>)</span> for sharing decisions about politically-motivated stories, and <span class="citation" data-cites="chandrasekhar2018signaling">Chandrasekhar, Golub, and Yang (<a href="#ref-chandrasekhar2018signaling" role="doc-biblioref">2018</a>)</span> for the role of reputational concerns<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Analogously, <span class="math inline">s = \frac{1}{1+s_{or}}</span><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>This is because we need to show the sharer’s beliefs and sharing decisions to the receiver.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Sharing choices are elicited before beliefs because we want sharing choices in the lab to be as “natural” as possible. There is consensus in the literature that asking participants about a story’s accuracy nudges them to think carefully about subsequent sharing decisions (<span class="citation" data-cites="pennycook2021shifting">Pennycook et al. (<a href="#ref-pennycook2021shifting" role="doc-biblioref">2021</a>)</span>), reducing their likelihood of sharing false stories.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>This, in turn, is to reduce the chance they provide beliefs that perfectly rationalize their sharing choice<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>For about half the sample, instructions are phrased somewhat differently: receivers are told that they are partnered with a computer program that “always shares” stories it thinks are true, and “never shares” stories it thinks are false. However, the program gets its beliefs wrong 20% of the time. Though more verbose, this alternative phrasing was better understood by participants.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Roughly 12 USD adjusting for purchasing power. See https://data.worldbank.org/indicator/PA.NUS.PRVT.PP<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>For instance, <span class="citation" data-cites="garimella2020pol">Garimella and Eckles (<a href="#ref-garimella2020pol" role="doc-biblioref">2020</a>)</span> find that most political stories shared in WhatsApp groups in India are pro-BJP, and political stories (pro or anti BJP) are more likely to be false.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>That is, in the range 0 - 0.1 for the TRUE signal, and 0.9-1.0 for the FALSE signal.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>In fact, updates are <em>largest</em> at extreme priors for surprising signals<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>“match” is simply if <span class="math inline">round(prior) == signal</span>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Participants rate their political preferences on 7 point likert scale during registration, well before starting the main study<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>Actually, as a percentage between 0 and 100, with 0 indicating certainly false and 100 indicating certainly true.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>This data comes from the revealed-beliefs round, where receivers see the sharers’ beliefs but do not see their sharing choices.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>Though once again, this could be because there’s less room for beliefs to increase at high priors.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>Receivers get paid Rs. 10 for every guess that is within 10 pp of the sharers’<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>Although we are characterizing the threshold as a property of the story, we may just as well think of it as a property of the sender or the receiver.<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>(On most social media platforms, receivers can observe the sharer’s choice but not her belief. Even though social media platforms allow sharers to add comments when forwarding a story, people rarely do so (XX). At the very least, they rarely forward a story along with a declaration of their own confidence in its truth.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
