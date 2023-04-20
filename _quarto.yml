@@ -18,11 +18,11 @@ format:
   html:
     page-layout: full
     theme:
-      light: flatly
       dark: darkly
+      light: flatly      
     css: styles.css
     toc: true
-    fontsize: 12px
+    #fontsize: 12px
     #link-external-icon: true
     link-external-newwindow: true
     linkcolor: "#18bc9c"
