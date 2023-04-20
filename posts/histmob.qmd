@@ -1,0 +1,16 @@
+---
+title: The American Dream in the Great Depression
+subtitle: Absolute Income Mobility in the United States, 1915-1940
+author:
+    - name: James Feigenbaum
+    - name: Maximillian Hell
+    - name: Robert Manduca
+    - name: Jimmy Narang
+date: "11/10/2019"
+description: "We use two newly digitized historical datasets to estimate rates of absolute income mobility for the cohort of sons born in the early 1910s in the United States. We find that the mobility for this cohort was 30-50 percentage points lower than for the 1940 cohort, a finding robust to alternative income imputations, inflation indices and age adjustments. The rates are similar to men born in the United States in the 1980s, suggesting that today’s young adults face mobility prospects comparable to those of adults entering the labor market during the Great Depression. But while low mobility rates for men born in the 1910s were due mainly to slow economic growth during the Depression, those of men coming of age today are due mostly to rising income inequality."
+href: "https://www.dropbox.com/s/if7hqhz9924s7ba/additional_paper_histmob.pdf?dl=0"
+categories:
+    - Inequality
+    - Income mobility
+    - Working paper
+---

@@ -1,0 +1,44 @@
+---
+title: "Jimmy Narang"
+about:
+  template: trestles
+  image: assets/jimmy.jpg
+  image-width: 15em
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/jimmy-narang/"
+    - icon: envelope-at
+      text: "Mail"
+      href: "mailto:jimmy.narang@berkeley.edu"
+    - icon: google
+      text: Scholar
+      href: "https://scholar.google.com/citations?user=kBR2FJMAAAAJ&hl=en"
+    - icon: file-pdf-fill
+      text: CV
+      href: "https://www.dropbox.com/s/6lw7n5hzq9gi0d2/CV_Jimmy_Narang_2023.pdf?dl=0"
+---
+
+## About
+
+I am a Ph.D. candidate in Economics with broad interests in applied microeconomics. I use field (or lab in field) experiments to understand questions related to:
+
+1. Social norms, social networks, and belief-formation;
+2. Intergenerational persistence of poverty and inequality.
+
+## Education
+
+University of California, Berkeley | Ph.D. in Economics | July 2023 (expected)
+
+IIIT Hyderabad | B.Tech in Computer Science | July 2008
+
+## Teaching
+
+(As teaching assistant)
+
+- Microeconomics
+- Behavioral Economics 
+- Econometrics
+- Data Structures & Algorithms
+

@@ -1,0 +1,22 @@
+---
+title: "Jimmy Narang"
+about:
+  template: jolla
+  image: assets/jimmy.png
+---
+
+I am a Ph.D. candidate in Economics with broad interests in applied microeconomics. I use field (or lab in field) experiments to understand questions related to:
+
+1. Social norms, social networks, and belief-formation;
+2. Intergenerational persistence of poverty and inequality.
+
+## Education
+
+University of California, Berkeley | CA, USA
+PhD in Economics | July 2023 (expected)
+
+IIIT Hyderabad | Telangana, India
+B.Tech in Computer Science | July 2008
+
+## Experience
+

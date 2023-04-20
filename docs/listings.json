@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/patents.html",
+    "items": []
+  },
+  {
+    "listing": "/research.html",
+    "items": [
+      "/posts/jmp.html",
+      "/posts/histmob.html",
+      "/posts/absmob.html"
+    ]
+  }
+]

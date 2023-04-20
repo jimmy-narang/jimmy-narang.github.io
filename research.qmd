@@ -1,0 +1,23 @@
+---
+title: Research
+listing:
+    - id: publications
+      contents: posts
+      categories: true
+      fields: [date, title, subtitle, author, description, categories, abstract, doi, abstract-title]
+      sort: "date desc"
+      #sort-ui: [date]
+      #filter-ui: [date, categories]
+    - id: in-progress
+      contents: in-progress.yml
+---
+
+## Publications and Working Papers<br/>
+
+:::{#publications}
+:::
+
+## In Progress
+
+:::{#in-progress}
+:::

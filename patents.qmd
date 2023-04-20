@@ -1,0 +1,11 @@
+---
+title: Patents
+listing:
+    - id: patents
+      contents: patents.yml
+---
+
+## Patents
+
+:::{#patents}
+:::
