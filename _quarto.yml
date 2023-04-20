@@ -22,7 +22,7 @@ format:
       light: flatly      
     css: styles.css
     toc: true
-    #fontsize: 12px
+    fontsize: 14px
     #link-external-icon: true
     link-external-newwindow: true
     linkcolor: "#18bc9c"
