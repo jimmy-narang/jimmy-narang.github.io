@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Jimmy Narang"
+  google-analytics: "G-QWJG2V9Q5P"
   navbar:
     title: false
     background: primary
