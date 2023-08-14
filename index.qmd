@@ -1,44 +1,66 @@
 ---
 title: "Jimmy Narang"
+#subtitle: "Postdoc at the [Psychology of Technology Institute](https://www.psychoftech.org/) and the [Neely Center for ethical decision making](https://www.marshall.usc.edu/institutes-and-centers/neely-center-for-ethical-leadership-and-decision-making) at USC."
 about:
   template: trestles
   image: assets/jimmy.jpg
   image-width: 15em
   image-shape: round
+
   links:
-    - icon: linkedin
-      text: LinkedIn
-      href: "https://www.linkedin.com/in/jimmy-narang/"
     - icon: envelope-at
-      text: "Mail"
+      text: "contact"
       href: "mailto:jimmy.narang@berkeley.edu"
     - icon: google
       text: Scholar
       href: "https://scholar.google.com/citations?user=kBR2FJMAAAAJ&hl=en"
-    - icon: file-pdf-fill
-      text: CV
-      href: "https://www.dropbox.com/s/6lw7n5hzq9gi0d2/CV_Jimmy_Narang_2023.pdf?dl=0"
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/jimmy-narang/"
+      
+    # - icon: file-pdf-fill
+    #   text: CV
+    #   href: "https://www.dropbox.com/s/6lw7n5hzq9gi0d2/CV_Jimmy_Narang_2023.pdf?dl=0"  
+    # - text: Research
+    #   href: "./research.qmd"
+    # - text: Patents
+    #   href: "./patents.qmd"
+
+  
 ---
 
 ## About
 
-I am a Ph.D. candidate in Economics with broad interests in applied microeconomics. I use field (or lab in field) experiments to understand questions related to:
+I am a microeconomist with broad interests in Behavioral Economics and Economic Development. I use lab/field experiments to answer questions about:
 
 1. Social norms, social networks, and belief-formation;
-2. Intergenerational persistence of poverty and inequality.
+2. Persistent inequalities of income, opportunity or power.
 
+Starting Aug 2023, I'll be a Postdoc at the [Psychology of Technology Institute](https://www.psychoftech.org/) and [Neely Center](https://www.marshall.usc.edu/institutes-and-centers/neely-center-for-ethical-leadership-and-decision-making) at the University of Southern California. 
+
+::: {.callout-note}
+
+## Note
+
+I'm actively seeking collaborators for new projects. Please write to me if any of the the topics below (or the themes above) interest you:
+
+- Relationships between domestic workers and their employers in India
+- Generative AI and the manual work ([often by workers in low/middle income countries](https://www.theverge.com/features/23764584/ai-artificial-intelligence-data-notation-labor-scale-surge-remotasks-openai-chatbots)) that goes into producing it. 
+
+:::
+
+
+
+
+
+<!--
 ## Education
 
-University of California, Berkeley | Ph.D. in Economics | July 2023 (expected)
+University of California, Berkeley | Ph.D. in Economics | Aug 2023
 
 IIIT Hyderabad | B.Tech in Computer Science | July 2008
 
 ## Teaching
 
-(As teaching assistant)
-
-- Microeconomics
-- Behavioral Economics 
-- Econometrics
-- Data Structures & Algorithms
-
+Microeconomics; Behavioral Economics; Econometrics; Data Structures & Algorithms
+-->

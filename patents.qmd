@@ -5,7 +5,5 @@ listing:
       contents: patents.yml
 ---
 
-## Patents
-
 :::{#patents}
 :::

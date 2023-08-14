@@ -9,11 +9,15 @@ website:
     title: false
     background: primary
     search: true
+    collapse: false
     left:
       - href: index.qmd
         text: Home
       - research.qmd
       - patents.qmd
+      - icon: file-pdf-fill
+        text: CV
+        href: "https://www.dropbox.com/s/6lw7n5hzq9gi0d2/CV_Jimmy_Narang_2023.pdf?dl=0"  
 
 format:
   html:
@@ -24,7 +28,7 @@ format:
     css: styles.css
     toc: true
     fontsize: 14px
-    #link-external-icon: true
+    link-external-icon: true
     link-external-newwindow: true
     linkcolor: "#18bc9c"
     email-obfuscation: javascript
