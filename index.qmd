@@ -3,7 +3,7 @@ title: "Jimmy Narang"
 #subtitle: "Postdoc at the [Psychology of Technology Institute](https://www.psychoftech.org/) and the [Neely Center for ethical decision making](https://www.marshall.usc.edu/institutes-and-centers/neely-center-for-ethical-leadership-and-decision-making) at USC."
 about:
   template: trestles
-  image: assets/jimmy.jpg
+  image: assets/sierra_2_sq.jpg
   image-width: 15em
   image-shape: round
 
