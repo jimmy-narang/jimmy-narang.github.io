@@ -7,7 +7,8 @@ website:
   google-analytics: "G-QWJG2V9Q5P"
   navbar:
     title: false
-    background: primary
+    #background: primary
+    background: "#a5a8a7"
     search: true
     collapse: false
     left:
