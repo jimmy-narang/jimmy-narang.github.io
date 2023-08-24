@@ -8,7 +8,7 @@ website:
   navbar:
     title: false
     #background: primary
-    background: "#a5a8a7"
+    background: "#a6a8a688"
     search: true
     collapse: false
     left:
@@ -31,5 +31,5 @@ format:
     fontsize: 14px
     link-external-icon: true
     link-external-newwindow: true
-    linkcolor: "#18bc9c"
+    #linkcolor: "#18bc9c"
     email-obfuscation: javascript

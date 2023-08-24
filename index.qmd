@@ -29,29 +29,33 @@ about:
   
 ---
 
-## About
+<!--## About-->
 
 I am a microeconomist with broad interests in Behavioral Economics and Economic Development. I use lab/field experiments to answer questions about:
 
-1. Social norms, social networks, and belief-formation;
+1. Social norms, social networks, and belief-formation. 
 2. Persistent inequalities of income, opportunity or power.
 
-Starting Aug 2023, I'll be a Postdoc at the [Psychology of Technology Institute](https://www.psychoftech.org/) and [Neely Center](https://www.marshall.usc.edu/institutes-and-centers/neely-center-for-ethical-leadership-and-decision-making) at the University of Southern California. 
+Starting Aug 2023, I will be a postdoc at the [Psychology of Technology Institute](https://www.psychoftech.org/) + [Neely Center](https://www.marshall.usc.edu/institutes-and-centers/neely-center-for-ethical-leadership-and-decision-making) at the University of Southern California. 
 
+::: {.callout-note}
+
+I'm visiting the [Mathematical Sciences Research Institute](msri.org) through the end of Sep 2023 and actively seeking collaborators for new projects. Feel free to drop an email or say hi (Room 314).
+
+:::
+
+<!--
 ::: {.callout-note}
 
 ## Note
 
-I'm actively seeking collaborators for new projects. Please write to me if any of the the topics below (or the themes above) interest you:
+I am actively seeking collaborators for new projects. Please write to me if any of the topics below (or themes above) interest you:
 
 - Relationships between domestic workers and their employers in India
-- Generative AI and the manual work ([often by workers in low/middle income countries](https://www.theverge.com/features/23764584/ai-artificial-intelligence-data-notation-labor-scale-surge-remotasks-openai-chatbots)) that goes into producing it. 
+- Generative AI and the labeling work ([performed in low/middle income countries](https://www.theverge.com/features/23764584/ai-artificial-intelligence-data-notation-labor-scale-surge-remotasks-openai-chatbots)) that undergirds it.
 
 :::
-
-
-
-
+-->
 
 <!--
 ## Education
