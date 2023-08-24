@@ -24,8 +24,8 @@ format:
   html:
     page-layout: full
     theme:
-      dark: darkly
-      light: flatly      
+      light: flatly # First theme is default
+      dark: darkly      
     css: styles.css
     toc: true
     fontsize: 14px
