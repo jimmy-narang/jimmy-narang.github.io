@@ -8,7 +8,6 @@ categories:
   - Social Networks
   - Belief Formation
   - Working paper
-  - Job market paper
 ---
 
 ::: {.callout-note}
