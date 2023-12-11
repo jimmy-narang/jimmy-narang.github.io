@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.330">
+<meta name="generator" content="quarto-1.4.521">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -49,12 +49,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -63,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -145,7 +147,7 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand navbar-dark ">
+    <nav class="navbar navbar-expand " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
           <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
@@ -186,7 +188,7 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
   <li><a href="#in-progress" id="toc-in-progress" class="nav-link" data-scroll-target="#in-progress">In Progress</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Belief Formation">Belief Formation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="In Progress">In Progress <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Income mobility">Income mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Inequality">Inequality <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Job market paper">Job market paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Social Networks">Social Networks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Working paper">Working paper <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Belief Formation">Belief Formation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="In Progress">In Progress <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Income mobility">Income mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Inequality">Inequality <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Social Networks">Social Networks <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Working paper">Working paper <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -208,20 +210,19 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
 
 </header>
 
+
 <section id="publications-and-working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="publications-and-working-papers">Publications and Working Papers<br></h2>
 <div id="listing-publications" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Social Networks,Belief Formation,Working paper,Job market paper" data-listing-date-sort="1694415600000" data-listing-file-modified-sort="1694586001440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
+<div class="quarto-post image-right" data-index="0" data-categories="Social Networks,Belief Formation,Working paper" data-listing-date-sort="1694370600000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="14">
 <div class="body">
-<a href="./posts/jmp.html">
 <h3 class="no-anchor listing-title">
-When Sharing isn’t Believing
+<a href="./posts/jmp.html" class="no-external">When Sharing isn’t Believing</a>
 </h3>
 <div class="listing-subtitle">
-Experimental evidence on coarse messaging and belief-formation in fake news.
+<a href="./posts/jmp.html" class="no-external">Experimental evidence on coarse messaging and belief-formation in fake news.</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Social Networks'); return false;">
 Social Networks
@@ -232,18 +233,13 @@ Belief Formation
 <div class="listing-category" onclick="window.quartoListingCategory('Working paper'); return false;">
 Working paper
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('Job market paper'); return false;">
-Job market paper
 </div>
-</div>
-<a href="./posts/jmp.html">
 <div class="listing-description">
-<p>How much do people (additionally) believe a news story because it’s been shared by a friend? How much <em>should</em> they believe it for that reason? To answer these questions I conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I find receivers over-interpret sharing as a sign of a story’s veracity and the sharer’s faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases <em>irrespective</em> of the sharers’ belief in them, with false stories accruing the greatest additional trust. To understand why, I measure how receivers’ update if they (i) observe the sharer’s beliefs about these stories (instead of sharing decisions), and (ii) observe computer-generated signals of fixed accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers’ biased inference: receivers overestimate how well sharers’ beliefs predict a story’s veracity; miscalculate the relevance of sharers’ beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least trusted originally.</p>
+<a href="./posts/jmp.html" class="no-external">How much do people (additionally) believe a news story because it’s been shared by a friend? How much <em>should</em> they believe it for that reason? To answer these questions I conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I find receivers over-interpret sharing as a sign of a story’s veracity and the sharer’s faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases <em>irrespective</em> of the sharers’ belief in them, with false stories accruing the greatest additional trust. To understand why, I measure how receivers’ update if they (i) observe the sharer’s beliefs about these stories (instead of sharing decisions), and (ii) observe computer-generated signals of fixed accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers’ biased inference: receivers overestimate how well sharers’ beliefs predict a story’s veracity; miscalculate the relevance of sharers’ beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least trusted originally.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/jmp.html">
+<a href="./posts/jmp.html" class="no-external">
 <div class="listing-date">
 Sep 11, 2023
 </div>
@@ -253,16 +249,14 @@ Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Inequality,Income mobility,Working paper" data-listing-date-sort="1573372800000" data-listing-file-modified-sort="1682828915387" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Inequality,Income mobility,Working paper" data-listing-date-sort="1573324200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
-<a href="./posts/histmob.html">
 <h3 class="no-anchor listing-title">
-The American Dream in the Great Depression
+<a href="./posts/histmob.html" class="no-external">The American Dream in the Great Depression</a>
 </h3>
 <div class="listing-subtitle">
-Absolute Income Mobility in the United States, 1915-1940
+<a href="./posts/histmob.html" class="no-external">Absolute Income Mobility in the United States, 1915-1940</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Inequality'); return false;">
 Inequality
@@ -274,14 +268,12 @@ Income mobility
 Working paper
 </div>
 </div>
-<a href="./posts/histmob.html">
 <div class="listing-description">
-<p>We use two newly digitized historical datasets to estimate rates of absolute income mobility for the cohort of sons born in the early 1910s in the United States. We find that the mobility for this cohort was 30-50 percentage points lower than for the 1940 cohort, a finding robust to alternative income imputations, inflation indices and age adjustments. The rates are similar to men born in the United States in the 1980s, suggesting that today’s young adults face mobility prospects comparable to those of adults entering the labor market during the Great Depression. But while low mobility rates for men born in the 1910s were due mainly to slow economic growth during the Depression, those of men coming of age today are due mostly to rising income inequality.</p>
+<a href="./posts/histmob.html" class="no-external">We use two newly digitized historical datasets to estimate rates of absolute income mobility for the cohort of sons born in the early 1910s in the United States. We find that the mobility for this cohort was 30-50 percentage points lower than for the 1940 cohort, a finding robust to alternative income imputations, inflation indices and age adjustments. The rates are similar to men born in the United States in the 1980s, suggesting that today’s young adults face mobility prospects comparable to those of adults entering the labor market during the Great Depression. But while low mobility rates for men born in the 1910s were due mainly to slow economic growth during the Depression, those of men coming of age today are due mostly to rising income inequality.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/histmob.html">
+<a href="./posts/histmob.html" class="no-external">
 <div class="listing-date">
 Nov 10, 2019
 </div>
@@ -291,16 +283,14 @@ James Feigenbaum, Maximillian Hell, Robert Manduca, Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Inequality,Income mobility" data-listing-date-sort="1493017200000" data-listing-file-modified-sort="1682828915377" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="Inequality,Income mobility" data-listing-date-sort="1492972200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
-<a href="./posts/absmob.html">
 <h3 class="no-anchor listing-title">
-The Fading American Dream
+<a href="./posts/absmob.html" class="no-external">The Fading American Dream</a>
 </h3>
 <div class="listing-subtitle">
-Trends in absolute income mobility since 1940
+<a href="./posts/absmob.html" class="no-external">Trends in absolute income mobility since 1940</a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Inequality'); return false;">
 Inequality
@@ -309,14 +299,12 @@ Inequality
 Income mobility
 </div>
 </div>
-<a href="./posts/absmob.html">
 <div class="listing-description">
-<p>We estimated rates of <em>absolute income mobility</em> — the fraction of children who earn more than their parents — by combining data from U.S. Census and Current Population Survey cross sections with panel data from de-identified tax records. We found that rates of absolute mobility have fallen from approximately 90% for children born in 1940 to 50% for children born in the 1980s. Increasing Gross Domestic Product (GDP) growth rates alone cannot restore absolute mobility to the rates experienced by children born in the 1940s. However, distributing current GDP growth more equally across income groups as in the 1940 birth cohort would reverse more than 70% of the decline in mobility. These results imply that reviving the “American dream” of high rates of absolute mobility would require economic growth that is shared more broadly across the income distribution.</p>
+<a href="./posts/absmob.html" class="no-external">We estimated rates of <em>absolute income mobility</em> — the fraction of children who earn more than their parents — by combining data from U.S. Census and Current Population Survey cross sections with panel data from de-identified tax records. We found that rates of absolute mobility have fallen from approximately 90% for children born in 1940 to 50% for children born in the 1980s. Increasing Gross Domestic Product (GDP) growth rates alone cannot restore absolute mobility to the rates experienced by children born in the 1940s. However, distributing current GDP growth more equally across income groups as in the 1940 birth cohort would reverse more than 70% of the decline in mobility. These results imply that reviving the “American dream” of high rates of absolute mobility would require economic growth that is shared more broadly across the income distribution.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/absmob.html">
+<a href="./posts/absmob.html" class="no-external">
 <div class="listing-date">
 Apr 24, 2017
 </div>
@@ -341,14 +329,12 @@ No matching items
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="Belief Formation,In Progress">
 <div class="body">
-<a href="">
 <h3 class="no-anchor listing-title">
-Priors vs.&nbsp;Desires: what happens when biases interact
+<a href="" class="no-external">Priors vs.&nbsp;Desires: what happens when biases interact</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Belief Formation'); return false;">
 Belief Formation
@@ -357,14 +343,12 @@ Belief Formation
 In Progress
 </div>
 </div>
-<a href="">
 <div class="listing-description">
-<p>A long literature in psychology and economics documents that people update their beliefs in a biased manner upon receiving news that agrees with their priors (confirmation bias) or their desires (motivated updating / desirability bias). But what happens when these biases (i) align or (ii) conflict with each other? By combining data from existing studies with new experiments, I find that confirmation bias is first-order, and mediates the extent to which desirability bias occurs. Subjects’ beliefs show almost no movement upon receiving news that confirms their priors, irrespective of its favorability to their ego or politics. However, subjects update their beliefs considerably upon receiving disconfirming (surprising) news, with larger updates on favorable news.</p>
+<a href="" class="no-external">A long literature in psychology and economics documents that people update their beliefs in a biased manner upon receiving news that agrees with their priors (confirmation bias) or their desires (motivated updating / desirability bias). But what happens when these biases (i) align or (ii) conflict with each other? By combining data from existing studies with new experiments, I find that confirmation bias is first-order, and mediates the extent to which desirability bias occurs. Subjects’ beliefs show almost no movement upon receiving news that confirms their priors, irrespective of its favorability to their ego or politics. However, subjects update their beliefs considerably upon receiving disconfirming (surprising) news, with larger updates on favorable news.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="">
+<p><a href="" class="no-external"></a></p><a href="" class="no-external">
 <div class="listing-author">
 Jimmy Narang
 </div>
@@ -373,14 +357,12 @@ Jimmy Narang
 </div>
 <div class="quarto-post image-right" data-index="1" data-categories="Social Networks,Belief Formation,In Progress">
 <div class="body">
-<a href="">
 <h3 class="no-anchor listing-title">
-Evaluating Satyameva Jayate: A digital literacy program to reduce misinformation among high school students
+<a href="" class="no-external">Evaluating Satyameva Jayate: A digital literacy program to reduce misinformation among high school students</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Social Networks'); return false;">
 Social Networks
@@ -392,14 +374,12 @@ Belief Formation
 In Progress
 </div>
 </div>
-<a href="">
 <div class="listing-description">
-<p>In partnership with the government of Kerala (India), this randomized study will evaluate the effectiveness of a digital literacy program to reduce the spread of misinformation among high school students. The program, titled Satyameva Jayate , is mandatory for the nearly three million students enrolled in government schools. We plan to introduce new curriculum and treatments in addition to evaluating the program’s current version.</p>
+<a href="" class="no-external">In partnership with the government of Kerala (India), this randomized study will evaluate the effectiveness of a digital literacy program to reduce the spread of misinformation among high school students. The program, titled Satyameva Jayate , is mandatory for the nearly three million students enrolled in government schools. We plan to introduce new curriculum and treatments in addition to evaluating the program’s current version.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="">
+<p><a href="" class="no-external"></a></p><a href="" class="no-external">
 <div class="listing-author">
 Jimmy Narang, Mir Mohammed Ali
 </div>
@@ -640,6 +620,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -689,15 +689,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    if (id.startsWith('sec-')) {
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
         }
+        typesetMath(container);
         return container.innerHTML
       } else {
+        typesetMath(note);
         return note.innerHTML;
       }
     } else {
@@ -706,6 +736,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
+      typesetMath(note);
       return note.innerHTML;
     }
   }
@@ -748,6 +779,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
       }
     }, function(instance) {
     });
@@ -823,7 +877,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     window.addEventListener(
       "resize",
       throttle(() => {
-        console.log("RESIZE");
         elRect = undefined;
         if (selectedAnnoteEl) {
           selectCodeLines(selectedAnnoteEl);
@@ -903,22 +956,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
