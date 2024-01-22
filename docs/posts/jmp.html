@@ -2,15 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.521">
+<meta name="generator" content="quarto-1.4.542">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jimmy Narang">
-<meta name="dcterms.date" content="2023-09-11">
+<meta name="dcterms.date" content="2024-10-01">
 <meta name="description" content="How much do people (additionally) believe a news story because it’s been shared by a friend? How much should they believe it for that reason? To answer these questions I conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I find receivers over-interpret sharing as a sign of a story’s veracity and the sharer’s faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases irrespective of the sharers’ belief in them, with false stories accruing the greatest additional trust. To understand why, I measure how receivers’ update if they (i) observe the sharer’s beliefs about these stories (instead of sharing decisions), and (ii) observe computer-generated signals of fixed accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers’ biased inference: receivers overestimate how well sharers’ beliefs predict a story’s veracity; miscalculate the relevance of sharers’ beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least trusted originally.">
 
-<title>Jimmy Narang - When Sharing isn’t Believing</title>
+<title>Jimmy Narang - Receiving vs.&nbsp;believing (mis)information from friends</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,8 +129,8 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">When Sharing isn’t Believing</h1>
-<p class="subtitle lead">Experimental evidence on coarse messaging and belief-formation in fake news.</p>
+<h1 class="title">Receiving vs.&nbsp;believing (mis)information from friends</h1>
+<p class="subtitle lead">Experimental evidence from India.</p>
   <div class="quarto-categories">
     <div class="quarto-category">Social Networks</div>
     <div class="quarto-category">Belief Formation</div>
@@ -157,7 +157,7 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 11, 2023</p>
+      <p class="date">October 1, 2024</p>
     </div>
   </div>
   
@@ -179,10 +179,9 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Draft under revision. Contact me if you’re interested in an previous version.</p>
+<p><a href="https://www.dropbox.com/s/0si60kn7fjj16ky/draft.pdf?dl=0">Draft Here</a>.</p>
 </div>
 </div>
-<!--[Draft Here](https://www.dropbox.com/s/0si60kn7fjj16ky/draft.pdf?dl=0)-->
 
 
 
@@ -479,27 +478,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -514,10 +492,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -526,7 +508,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }
