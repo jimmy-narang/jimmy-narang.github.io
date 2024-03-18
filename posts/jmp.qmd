@@ -3,7 +3,7 @@ title: "Receiving vs. believing (mis)information from friends"
 subtitle: "Experimental evidence from India."
 description: "How much do people (additionally) believe a news story because it's been shared by a friend? How much _should_ they believe it for that reason? To answer these questions I conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I find receivers over-interpret sharing as a sign of a story's veracity and the sharer's faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases _irrespective_ of the sharers’ belief in them, with false stories accruing the greatest additional trust.  To understand why, I measure how receivers' update if they (i) observe the sharer’s beliefs about these stories (instead of sharing decisions), and (ii) observe computer-generated signals of fixed accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers' biased inference: receivers overestimate how well sharers' beliefs predict a story’s veracity; miscalculate the relevance of sharers' beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least trusted originally."
 author: "Jimmy Narang"
-date: "10/01/2024"
+date: "15 Mar 2024"
 categories:
   - Social Networks
   - Belief Formation
@@ -11,6 +11,5 @@ categories:
 ---
 
 ::: {.callout-note}
-
-[Draft Here](https://www.dropbox.com/s/0si60kn7fjj16ky/draft.pdf?dl=0).
+[Draft Here](https://www.dropbox.com/scl/fi/zw1xk1pkv5rlm1y2jraed/jmp.pdf?rlkey=tghfhlb1uhea95znkmwf2vpw4&dl=0).
 :::

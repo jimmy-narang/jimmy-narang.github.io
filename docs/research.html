@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.542">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -242,7 +242,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="publications-and-working-papers">Publications and Working Papers<br></h2>
 <div id="listing-publications" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Social Networks,Belief Formation,Working paper" data-listing-date-sort="1727721000000" data-listing-file-modified-sort="1704881730244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="Social Networks,Belief Formation,Working paper" data-listing-date-sort="1710486000000" data-listing-file-modified-sort="1710720394768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/jmp.html" class="no-external">Receiving vs.&nbsp;believing (mis)information from friends</a>
@@ -268,7 +268,7 @@ Working paper
 <div class="metadata">
 <a href="./posts/jmp.html" class="no-external">
 <div class="listing-date">
-Oct 1, 2024
+Mar 15, 2024
 </div>
 <div class="listing-author">
 Jimmy Narang
@@ -276,7 +276,7 @@ Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Inequality,Income mobility,Working paper" data-listing-date-sort="1573324200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="Inequality,Income mobility,Working paper" data-listing-date-sort="1573372800000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/histmob.html" class="no-external">The American Dream in the Great Depression</a>
@@ -310,7 +310,7 @@ James Feigenbaum, Maximillian Hell, Robert Manduca, Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Inequality,Income mobility" data-listing-date-sort="1492972200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="Inequality,Income mobility" data-listing-date-sort="1493017200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/absmob.html" class="no-external">The Fading American Dream</a>
@@ -658,6 +658,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -701,7 +706,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -749,7 +758,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.542">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jimmy Narang">
-<meta name="dcterms.date" content="2024-10-01">
+<meta name="dcterms.date" content="2024-03-15">
 <meta name="description" content="How much do people (additionally) believe a news story because it’s been shared by a friend? How much should they believe it for that reason? To answer these questions I conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, I collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. I find receivers over-interpret sharing as a sign of a story’s veracity and the sharer’s faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases irrespective of the sharers’ belief in them, with false stories accruing the greatest additional trust. To understand why, I measure how receivers’ update if they (i) observe the sharer’s beliefs about these stories (instead of sharing decisions), and (ii) observe computer-generated signals of fixed accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers’ biased inference: receivers overestimate how well sharers’ beliefs predict a story’s veracity; miscalculate the relevance of sharers’ beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least trusted originally.">
 
 <title>Jimmy Narang - Receiving vs.&nbsp;believing (mis)information from friends</title>
@@ -157,7 +157,7 @@ gtag('config', 'G-QWJG2V9Q5P', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2024</p>
+      <p class="date">March 15, 2024</p>
     </div>
   </div>
   
@@ -179,7 +179,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://www.dropbox.com/s/0si60kn7fjj16ky/draft.pdf?dl=0">Draft Here</a>.</p>
+<p><a href="https://www.dropbox.com/scl/fi/zw1xk1pkv5rlm1y2jraed/jmp.pdf?rlkey=tghfhlb1uhea95znkmwf2vpw4&amp;dl=0">Draft Here</a>.</p>
 </div>
 </div>
 
@@ -420,6 +420,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -463,7 +468,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -511,7 +520,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
