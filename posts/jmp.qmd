@@ -1,7 +1,7 @@
 ---
 title: "Receiving vs. believing (mis)information from friends"
 subtitle: "Experimental evidence from India."
-description: "How much do people (additionally) believe a news story because it's been shared by a friend? How much _should_ they believe it for that reason? To answer these questions we conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, we collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. We find receivers over-interpret sharing as a sign of a story's veracity and the sharer's faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases _irrespective_ of the sharers’ belief in them, with false stories accruing the greatest additional trust. To identify mechanisms, I measure how receivers update from (i) observing the sharer’s beliefs directly, and (ii) receiving computer-generated clues of known accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers' biased inference: receivers overestimate how well sharers' beliefs predict a story’s veracity; miscalculate the relevance of those beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least believed originally."
+description: "How much do people (additionally) believe a news story because it's been shared by a friend? How much _should_ they believe it for that reason? To answer these questions we conduct a series of lab experiments in India with ~800 pairs of real-life friends. Using a custom platform, we collect detailed information on how individuals (sharers) decide which stories to share, and how their friends (receivers) update their beliefs in response. We find receivers over-interpret sharing as a sign of a story's veracity and the sharer's faith in it, while discounting other reasons/motivations for sharing. As a result, receivers’ trust in shared stories increases _irrespective_ of the sharers’ belief in them, with false stories accruing the greatest additional trust. To identify mechanisms, I measure how receivers update if, instead of observing their friend's decisions they (i) learn their friend's beliefs, and (ii) receive computer-generated clues of known accuracy (instead of subjective signals from their friend). I find several mechanisms contribute to receivers' biased inference: receivers overestimate how well sharers' beliefs predict a story’s veracity; miscalculate the relevance of those beliefs to sharing decisions; and exhibit base-rate neglect, updating the most on stories they least believed originally."
 author: "Jimmy Narang"
 date: "07 July 2024"
 categories:
@@ -11,5 +11,5 @@ categories:
 ---
 
 ::: {.callout-note}
-[Draft Here](https://www.dropbox.com/scl/fi/zw1xk1pkv5rlm1y2jraed/jmp.pdf?rlkey=tghfhlb1uhea95znkmwf2vpw4&dl=0).
+[Draft Here](https://doi.org/10.31219/osf.io/h7pue).
 :::
