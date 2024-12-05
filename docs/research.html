@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-description','listing-categories','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-description","listing-categories","listing-subtitle","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -215,7 +215,7 @@ window.Quarto = {
   <li><a href="#in-progress" id="toc-in-progress" class="nav-link" data-scroll-target="#in-progress">In Progress</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ==">Artificial Intelligence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmVsaWVmJTIwRm9ybWF0aW9u">Belief Formation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW4lMjBQcm9ncmVzcw==">In Progress <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5jb21lJTIwbW9iaWxpdHk=">Income mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW5lcXVhbGl0eQ==">Inequality <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwTmV0d29ya3M=">Social Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya2luZyUyMHBhcGVy">Working paper <span class="quarto-category-count">(3)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ==">Artificial Intelligence <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmVsaWVmJTIwRm9ybWF0aW9u">Belief Formation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW4lMjBQcm9ncmVzcw==">In Progress <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW5jb21lJTIwbW9iaWxpdHk=">Income mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW5lcXVhbGl0eQ==">Inequality <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwTmV0d29ya3M=">Social Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya2luZyUyMHBhcGVy">Working paper <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -242,41 +242,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="publications-and-working-papers">Publications and Working Papers<br></h2>
 <div id="listing-publications" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0xMTSUyQ1dvcmtpbmclMjBwYXBlcg==" data-listing-date-sort="1732991400000" data-listing-file-modified-sort="1733421123105" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/llmuas.html" class="no-external">Trends in the Usage of Large Language Models in the United States</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/llmuas.html" class="no-external">Evidence from UAS data</a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ=='); return false;">
-Artificial Intelligence
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('V29ya2luZyUyMHBhcGVy'); return false;">
-Working paper
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/llmuas.html" class="no-external">Using a nationally representative panel (N ~ 15,000), we conducted two waves of surveys (fall 2023 and spring 2024) to track awareness, usage, and perceptions of large language models (LLMs) in the United States. Our data capture usage patterns not only by demographics and occupations but also by personal traits and preferences. By spring 2024, 24% of U.S. residents had used LLMs, and another 48% were aware of them, compared to 18% and 50.5%, respectively, in fall 2023. LLM Usage was significantly higher among young men, Whites and Asians, those with income above $100,000, college education, analytical occupations, Democrats, and individuals above median in cognitive ability, internet skills, and openness to new experiences. Reasons for LLM usage shifted over time (within users): work- and school-related applications increased, while curiosity- and entertainment-driven usage declined. Most users maintained stable usage frequency, but those using LLMs for work were 11 percentage points more likely to engage frequently (daily or weekly) and sustained this higher usage over time. These findings provide a dynamic view of LLM adoption across socio-demographic groups, highlighting persistent disparities and emerging inequalities in AI engagement.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/llmuas.html" class="no-external">
-<div class="listing-date">
-Dec 1, 2024
-</div>
-<div class="listing-author">
-Marco Angrisani, Maria Cassanova, Nathanael Fast, Jimmy Narang, Juliana Schroeder
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="U29jaWFsJTIwTmV0d29ya3MlMkNCZWxpZWYlMjBGb3JtYXRpb24lMkNXb3JraW5nJTIwcGFwZXI=" data-listing-date-sort="1720290600000" data-listing-file-modified-sort="1733418955492" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+<div class="quarto-post image-right" data-index="0" data-categories="U29jaWFsJTIwTmV0d29ya3MlMkNCZWxpZWYlMjBGb3JtYXRpb24lMkNXb3JraW5nJTIwcGFwZXI=" data-listing-date-sort="1720290600000" data-listing-file-modified-sort="1733418955492" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/jmp.html" class="no-external">Receiving vs.&nbsp;believing (mis)information from friends</a>
@@ -310,7 +276,7 @@ Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="SW5lcXVhbGl0eSUyQ0luY29tZSUyMG1vYmlsaXR5JTJDV29ya2luZyUyMHBhcGVy" data-listing-date-sort="1573324200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="SW5lcXVhbGl0eSUyQ0luY29tZSUyMG1vYmlsaXR5JTJDV29ya2luZyUyMHBhcGVy" data-listing-date-sort="1573324200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/histmob.html" class="no-external">The American Dream in the Great Depression</a>
@@ -344,7 +310,7 @@ James Feigenbaum, Maximillian Hell, Robert Manduca, Jimmy Narang
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="SW5lcXVhbGl0eSUyQ0luY29tZSUyMG1vYmlsaXR5" data-listing-date-sort="1492972200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="SW5lcXVhbGl0eSUyQ0luY29tZSUyMG1vYmlsaXR5" data-listing-date-sort="1492972200000" data-listing-file-modified-sort="1702313270090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/absmob.html" class="no-external">The Fading American Dream</a>
@@ -412,6 +378,43 @@ In Progress
 <p><a href="" class="no-external"></a></p><a href="" class="no-external">
 <div class="listing-author">
 Jimmy Narang
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyQ0xMTSUyQ0luZXF1YWxpdHklMkNJbiUyMFByb2dyZXNz" data-listing-date-sort="1732991400000">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="" class="no-external">Trends in the Usage of Large Language Models in the United States</a>
+</h3>
+<div class="listing-subtitle">
+<a href="" class="no-external">Evidence from UAS data</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ=='); return false;">
+Artificial Intelligence
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">
+LLM
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SW5lcXVhbGl0eQ=='); return false;">
+Inequality
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SW4lMjBQcm9ncmVzcw=='); return false;">
+In Progress
+</div>
+</div>
+<div class="listing-description">
+<a href="" class="no-external">Using a nationally representative panel (N ~ 15,000), we conducted two waves of surveys to track awareness, usage, and perceptions of large language models (LLMs) in the United States. Our data capture longitudinal usage not just by demographics and occupations but also by personal traits and preferences. We find that by Spring 2024, 24% of U.S. residents had used LLMs, and another 48% were aware of them, compared to 18% and 50.5%, respectively, in Fall 2023. LLM Usage was significantly higher among young men, Whites and Asians, those with income above $100,000, college education, analytical occupations, Democrats, and individuals above median in cognitive ability, internet skills, and openness to new experiences, with gaps relatively stable over time. Reasons for LLM usage shifted within users: work- and school-related applications increased, while curiosity- and entertainment-driven usage declined. Those using LLMs for work were 11 percentage points more likely to engage frequently (daily or weekly) and remain frequent users. These findings provide a dynamic view of LLM adoption across socio-demographic groups, highlighting persistent disparities and emerging inequalities in AI engagement.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="" class="no-external">
+<div class="listing-date">
+Dec 1, 2024
+</div>
+<div class="listing-author">
+Marco Angrisani, Maria Cassanova, Nathanael Fast, Jimmy Narang, Juliana Schroeder
 </div>
 </a>
 </div>
